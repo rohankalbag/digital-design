@@ -1,0 +1,76 @@
+|DUT
+input_vector[0] => TwotoFour:add_instance.E
+input_vector[1] => TwotoFour:add_instance.A0
+input_vector[2] => TwotoFour:add_instance.A1
+output_vector[0] << TwotoFour:add_instance.Y[0]
+output_vector[1] << TwotoFour:add_instance.Y[1]
+output_vector[2] << TwotoFour:add_instance.Y[2]
+output_vector[3] << TwotoFour:add_instance.Y[3]
+
+
+|DUT|TwotoFour:add_instance
+A1 => INVERTER:i1.A
+A1 => AND_2:ag1.A
+A0 => INVERTER:i2.A
+A0 => INVERTER:i3.A
+A0 => AND_2:ag3.B
+A0 => AND_2:ag5.B
+E => AND_2:ag1.B
+E => AND_2:ag2.B
+Y[0] <= AND_2:ag4.Y
+Y[1] <= AND_2:ag3.Y
+Y[2] <= AND_2:ag6.Y
+Y[3] <= AND_2:ag5.Y
+
+
+|DUT|TwotoFour:add_instance|INVERTER:i1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|TwotoFour:add_instance|INVERTER:i2
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|TwotoFour:add_instance|INVERTER:i3
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|TwotoFour:add_instance|AND_2:ag1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|TwotoFour:add_instance|AND_2:ag2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|TwotoFour:add_instance|AND_2:ag3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|TwotoFour:add_instance|AND_2:ag4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|TwotoFour:add_instance|AND_2:ag5
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|TwotoFour:add_instance|AND_2:ag6
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
