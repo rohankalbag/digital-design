@@ -1,0 +1,22 @@
+
+library work;
+use work.Gates.all;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity FourxOne is
+  port (I1,I2,I3,I4,S1,S2: in std_logic; Y: out std_logic);
+end entity FourxOne;
+
+architecture Struct of FourxOne is
+	component TwoxOne is
+		port (I0, I1, S: in std_logic; Y: out std_logic);
+	end component TwoxOne;
+  signal k1,k2: std_logic;
+begin
+  -- component instances
+  m1: TwoxOne port map(I0 => I1, I1 => I2, S => S1, Y => k1);
+  m2: TwoxOne port map(I0 => I3, I1 => I4, S => S1, Y => k2);
+  m3: TwoxOne port map(I0 => k1, I1 => k2, S => S2, Y => Y);
+end Struct;
