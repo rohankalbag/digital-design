@@ -1,0 +1,570 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/simulation/modelsim
+Eand_2
+Z1 w1631987204
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/Gates.vhdl
+Z5 FE:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/Gates.vhdl
+l0
+L53 1
+VU7DI`Tzl@EfAQ?4z53E2F2
+!s100 1`nWBgISBZCVoBKm`L3TM3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1632036010
+!i10b 1
+Z8 !s108 1632036010.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/Gates.vhdl|
+Z10 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/Gates.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aequations
+R2
+R3
+DEx4 work 5 and_2 0 22 U7DI`Tzl@EfAQ?4z53E2F2
+!i122 0
+l58
+L57 4
+Vlhgfe[LY0eM?e_R:VHaZ:1
+!s100 6Ea@T?V>e39O6cgPlk<iS0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eatm
+Z13 w1632035320
+R2
+R3
+Z14 DPx4 work 5 gates 0 22 @eB5S<QWaBmXNA4jc;3?G2
+!i122 4
+R0
+Z15 8E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/atm.vhdl
+Z16 FE:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/atm.vhdl
+l0
+L18 1
+Vo0U_joLQj6?PcdkaB<BVL1
+!s100 X9P6iWWY_2ezzl>NUH=lX1
+R6
+31
+Z17 !s110 1632036011
+!i10b 1
+Z18 !s108 1632036011.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/atm.vhdl|
+Z20 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/atm.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+R14
+DEx4 work 3 atm 0 22 o0U_joLQj6?PcdkaB<BVL1
+!i122 4
+l35
+L24 22
+VUAi`NbK71:kRl6VgBBRho1
+!s100 LDL_0W<2LSMPm>^RGI_fU3
+R6
+31
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R11
+R12
+Ediv
+Z21 w1632029427
+R2
+R3
+!i122 2
+R0
+Z22 8E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/divider.vhdl
+Z23 FE:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/divider.vhdl
+l0
+L15 1
+Vng:zV@0gDc?MfnEIKj`Yh1
+!s100 >6NO]2EnM6V2`4iE=5XUm2
+R6
+31
+R17
+!i10b 1
+R18
+Z24 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/divider.vhdl|
+Z25 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/divider.vhdl|
+!i113 1
+R11
+R12
+Abeh
+R2
+R3
+DEx4 work 3 div 0 22 ng:zV@0gDc?MfnEIKj`Yh1
+!i122 2
+l50
+L27 58
+VD<@L9YD64=iMC:b_9SYbL1
+!s100 @iz[UfeV^[FjQ672RZB?_2
+R6
+31
+R17
+!i10b 1
+R18
+R24
+R25
+!i113 1
+R11
+R12
+Edut
+Z26 w1632034858
+R2
+R3
+!i122 1
+R0
+Z27 8E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/DUT.vhdl
+Z28 FE:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/DUT.vhdl
+l0
+L7 1
+V8ZCHWn:Xc5?aSQbIWn=mG0
+!s100 AeezmCOZ1O0n;Sm:Ga5?N2
+R6
+31
+R17
+!i10b 1
+R18
+Z29 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/DUT.vhdl|
+Z30 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 8ZCHWn:Xc5?aSQbIWn=mG0
+!i122 1
+l20
+L12 19
+V@cB_5;mJcd91ebkQQ_7kP3
+!s100 0N2XOJU>_WQlPo2>7EYjI1
+R6
+31
+R17
+!i10b 1
+R18
+R29
+R30
+!i113 1
+R11
+R12
+Pgates
+R2
+R3
+!i122 0
+R1
+R0
+R4
+R5
+l0
+L3 1
+V@eB5S<QWaBmXNA4jc;3?G2
+!s100 N@iIgLVJlGZzK36CC:zf23
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ehalf_adder
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L120 1
+VOAZ_4ioR^1B[UAcaA1zf51
+!s100 oLN8>k[AMhPS;D9;:Z@Pz0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 10 half_adder 0 22 OAZ_4ioR^1B[UAcaA1zf51
+!i122 0
+l125
+L124 5
+VflMPld^`b]>0KKXzZhX_91
+!s100 ]f4Ql:1od=>zjRGlb:Lm:0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Einverter
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L41 1
+V82BXV;Uza[l3mE]`8B<HJ0
+!s100 dFc@GWJO@nF57X0IXFVfh0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 8 inverter 0 22 82BXV;Uza[l3mE]`8B<HJ0
+!i122 0
+l46
+L45 4
+V4]gW5EV5;RT@9C;Pga@SA0
+!s100 [DD^:ihbY=VNQeLiKKX_R1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enand_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L64 1
+VS^YD8?>b_]W^^dkQa>_3m2
+!s100 S;kgn2U384cOg4>1Kcdn<2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 nand_2 0 22 S^YD8?>b_]W^^dkQa>_3m2
+!i122 0
+l69
+L68 4
+VS]`6`a7Bz3gbaB=WX@WdM2
+!s100 EBK=7IM2m_0=gIZGM@F7H1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L86 1
+V`A=6DP8fY`aBzcQ@Hgc?S1
+!s100 hCNF9lV5T>8fg2MR^]6f^0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 nor_2 0 22 `A=6DP8fY`aBzcQ@Hgc?S1
+!i122 0
+l91
+L90 4
+VIJ=]C?8]dETGzmXBGe8in2
+!s100 iWUJUdMb8DJi]m^=42G9F3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enotecounter
+Z31 w1632034469
+R2
+R3
+R14
+!i122 3
+R0
+Z32 8E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/notecounter.vhdl
+Z33 FE:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/notecounter.vhdl
+l0
+L8 1
+V3:5Ogi6FG7l_5d6QLmkV20
+!s100 4PQ7g;CF34Qd=;o?86FT93
+R6
+31
+R17
+!i10b 1
+R18
+Z34 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/notecounter.vhdl|
+Z35 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/notecounter.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+R14
+DEx4 work 11 notecounter 0 22 3:5Ogi6FG7l_5d6QLmkV20
+!i122 3
+l30
+L13 22
+VW_KGO]F]H64f4chMJ@K]O0
+!s100 R2f:o]]0^WDP?8[nS<Pl21
+R6
+31
+R17
+!i10b 1
+R18
+R34
+R35
+!i113 1
+R11
+R12
+Eor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L75 1
+Ve?I6M>DO0lb4QOFDA10zP2
+!s100 _]<JbSG1DCI^d;kKCeeO:3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_2 0 22 e?I6M>DO0lb4QOFDA10zP2
+!i122 0
+l80
+L79 4
+V35?1APMW04D0M8BcdBhJ53
+!s100 kX9QLgDQM=e4dN7zDYk6o2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z36 w1632032769
+R3
+R2
+!i122 5
+R0
+Z37 8E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/Testbench.vhdl
+Z38 FE:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R17
+!i10b 1
+R18
+Z39 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/Testbench.vhdl|
+!s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 5
+l69
+L9 132
+VMFVXONF>j6N=LN^h]KWiF2
+!s100 AbiOJPESJoaI^C9H63Kn[2
+R6
+31
+R17
+!i10b 1
+R18
+R39
+Z40 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem_Backup/Testbench.vhdl|
+!i113 1
+R11
+R12
+Exnor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L109 1
+VLHIUEA1`23`S5JTPo4JYA2
+!s100 M7SmBC<JLShUJ=5Tb^BGR1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 xnor_2 0 22 LHIUEA1`23`S5JTPo4JYA2
+!i122 0
+l114
+L113 4
+V]AR[iEm:1Y`=`f78Ab8?A2
+!s100 2L8]1Q4cBgn^[7D^6oj0;3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Exor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L98 1
+VV2P2KWfUW5e1Z=NMXBDJ;0
+!s100 DUe=@W;GH8KgEREMWIRML1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 xor_2 0 22 V2P2KWfUW5e1Z=NMXBDJ;0
+!i122 0
+l103
+L102 4
+VQUFBaT6OJ>c<=2In4b:>M1
+!s100 _g>6CYjRMmc7O[`k^N;co3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
