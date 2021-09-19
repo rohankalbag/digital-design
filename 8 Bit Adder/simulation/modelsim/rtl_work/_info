@@ -1,0 +1,553 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/simulation/modelsim
+Eand_2
+Z1 w1627986832
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Gates.vhdl
+Z5 FE:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Gates.vhdl
+l0
+L53 1
+VU7DI`Tzl@EfAQ?4z53E2F2
+!s100 1`nWBgISBZCVoBKm`L3TM3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1630406635
+!i10b 1
+Z8 !s108 1630406635.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Gates.vhdl|
+Z10 !s107 E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Gates.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aequations
+R2
+R3
+DEx4 work 5 and_2 0 22 U7DI`Tzl@EfAQ?4z53E2F2
+!i122 0
+l58
+L57 4
+Vlhgfe[LY0eM?e_R:VHaZ:1
+!s100 6Ea@T?V>e39O6cgPlk<iS0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1630403501
+R2
+R3
+!i122 1
+R0
+Z14 8E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/DUT.vhdl
+Z15 FE:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/DUT.vhdl
+l0
+L7 1
+V>VNS><nFjmee3KQ1KH?oQ1
+!s100 ajecWhLA3Sh1z3^TA:GDz3
+R6
+31
+Z16 !s110 1630406636
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/DUT.vhdl|
+Z18 !s107 E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 >VNS><nFjmee3KQ1KH?oQ1
+!i122 1
+l16
+L12 39
+V7h[hMaMST9gaKYL<U8D=g1
+!s100 4T8=k1P?]S@Vm3CJ>Rz4W1
+R6
+31
+R16
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Eeight_adder
+Z19 w1630403883
+Z20 DPx4 work 15 full_adder_pack 0 22 KazTXTk47cf:C>4oOAWBb2
+Z21 DPx4 work 5 gates 0 22 @eB5S<QWaBmXNA4jc;3?G2
+R2
+R3
+!i122 3
+R0
+Z22 8E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Eight_Adder.vhdl
+Z23 FE:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Eight_Adder.vhdl
+l0
+L12 1
+VdI41HL`bSElm?h@0BO<Ld2
+!s100 DWA:Un9=CY`jJ5hEbUlJ[3
+R6
+31
+R16
+!i10b 1
+Z24 !s108 1630406636.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Eight_Adder.vhdl|
+Z26 !s107 E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Eight_Adder.vhdl|
+!i113 1
+R11
+R12
+Anature
+R20
+R21
+R2
+R3
+DEx4 work 11 eight_adder 0 22 dI41HL`bSElm?h@0BO<Ld2
+!i122 3
+l18
+L16 20
+VbzNZL^7G7nW=IJjb`?=Eo3
+!s100 N4>4f_PjiMm5PZD8>iQnk3
+R6
+31
+R16
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Efull_adder
+Z27 w1628235565
+R21
+R2
+R3
+!i122 2
+R0
+Z28 8E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Full_Adder.vhdl
+Z29 FE:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Full_Adder.vhdl
+l0
+L16 1
+V`O4>LC91`W65J[i86lNjl1
+!s100 4VAU0<R1KI6Ybn3Iij;UV0
+R6
+31
+R16
+!i10b 1
+R24
+Z30 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Full_Adder.vhdl|
+Z31 !s107 E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Full_Adder.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R21
+R2
+R3
+DEx4 work 10 full_adder 0 22 `O4>LC91`W65J[i86lNjl1
+!i122 2
+l22
+L20 14
+VaZFQYBP`b61IfoDZP33m<0
+!s100 ]]1V@mj<GRW=z3ZKCLg@U1
+R6
+31
+R16
+!i10b 1
+R24
+R30
+R31
+!i113 1
+R11
+R12
+Pfull_adder_pack
+R2
+R3
+!i122 2
+R27
+R0
+R28
+R29
+l0
+L4 1
+VKazTXTk47cf:C>4oOAWBb2
+!s100 eg[8XPK8ba67bA>S?`gD>0
+R6
+31
+R16
+!i10b 1
+R24
+R30
+R31
+!i113 1
+R11
+R12
+Pgates
+R2
+R3
+!i122 0
+R1
+R0
+R4
+R5
+l0
+L3 1
+V@eB5S<QWaBmXNA4jc;3?G2
+!s100 N@iIgLVJlGZzK36CC:zf23
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ehalf_adder
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L120 1
+VOAZ_4ioR^1B[UAcaA1zf51
+!s100 oLN8>k[AMhPS;D9;:Z@Pz0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 10 half_adder 0 22 OAZ_4ioR^1B[UAcaA1zf51
+!i122 0
+l125
+L124 5
+VflMPld^`b]>0KKXzZhX_91
+!s100 ]f4Ql:1od=>zjRGlb:Lm:0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Einverter
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L41 1
+V82BXV;Uza[l3mE]`8B<HJ0
+!s100 dFc@GWJO@nF57X0IXFVfh0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 8 inverter 0 22 82BXV;Uza[l3mE]`8B<HJ0
+!i122 0
+l46
+L45 4
+V4]gW5EV5;RT@9C;Pga@SA0
+!s100 [DD^:ihbY=VNQeLiKKX_R1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enand_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L64 1
+VS^YD8?>b_]W^^dkQa>_3m2
+!s100 S;kgn2U384cOg4>1Kcdn<2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 nand_2 0 22 S^YD8?>b_]W^^dkQa>_3m2
+!i122 0
+l69
+L68 4
+VS]`6`a7Bz3gbaB=WX@WdM2
+!s100 EBK=7IM2m_0=gIZGM@F7H1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L86 1
+V`A=6DP8fY`aBzcQ@Hgc?S1
+!s100 hCNF9lV5T>8fg2MR^]6f^0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 nor_2 0 22 `A=6DP8fY`aBzcQ@Hgc?S1
+!i122 0
+l91
+L90 4
+VIJ=]C?8]dETGzmXBGe8in2
+!s100 iWUJUdMb8DJi]m^=42G9F3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L75 1
+Ve?I6M>DO0lb4QOFDA10zP2
+!s100 _]<JbSG1DCI^d;kKCeeO:3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_2 0 22 e?I6M>DO0lb4QOFDA10zP2
+!i122 0
+l80
+L79 4
+V35?1APMW04D0M8BcdBhJ53
+!s100 kX9QLgDQM=e4dN7zDYk6o2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z32 w1630404135
+R3
+R2
+!i122 4
+R0
+Z33 8E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Testbench.vhdl
+Z34 FE:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R16
+!i10b 1
+R24
+Z35 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Testbench.vhdl|
+!s107 E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 4
+l69
+L9 132
+VlF<kDC?kh:7<Ak@?>`J=30
+!s100 fDG>^:ZOm9EEfI4:YUzT31
+R6
+31
+R16
+!i10b 1
+R24
+R35
+Z36 !s107 E:/Academics/IIT Bombay/Quartus/8bitaddergatelevel/Testbench.vhdl|
+!i113 1
+R11
+R12
+Exnor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L109 1
+VLHIUEA1`23`S5JTPo4JYA2
+!s100 M7SmBC<JLShUJ=5Tb^BGR1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 xnor_2 0 22 LHIUEA1`23`S5JTPo4JYA2
+!i122 0
+l114
+L113 4
+V]AR[iEm:1Y`=`f78Ab8?A2
+!s100 2L8]1Q4cBgn^[7D^6oj0;3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Exor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L98 1
+VV2P2KWfUW5e1Z=NMXBDJ;0
+!s100 DUe=@W;GH8KgEREMWIRML1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 xor_2 0 22 V2P2KWfUW5e1Z=NMXBDJ;0
+!i122 0
+l103
+L102 4
+VQUFBaT6OJ>c<=2In4b:>M1
+!s100 _g>6CYjRMmc7O[`k^N;co3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
