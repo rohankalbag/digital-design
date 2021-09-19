@@ -1,0 +1,34 @@
+ library ieee;
+use ieee.std_logic_1164.all;
+
+library work;
+
+use work.Gates.all;
+use work.Full_Adder_Pack.all;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Four_Adder is
+	port(A0,A1,A2,A3,B0,B1,B2,B3,M : in std_logic; S0,S1,S2,S3,Cout : out std_logic);
+end entity Four_Adder;
+
+architecture Nature of Four_Adder is
+	signal k1, k2, k3, k4, Cout1, Cout2, Cout3: std_logic;
+begin
+	x1: XOR_2 port map (A => B0, B => M, Y => k1);
+	fa1: Full_Adder
+			port map(A => A0, B => k1, Cin => M, S => S0, Cout => Cout1);
+			
+	x2: XOR_2 port map (A => B1, B => M, Y => k2);
+	fa2: Full_Adder
+			port map(A => A1, B => k2, Cin => Cout1, S => S1, Cout => Cout2);
+			
+	x3: XOR_2 port map (A => B2, B => M, Y => k3);
+	fa3: Full_Adder
+			port map(A => A2, B => k3, Cin => Cout2, S => S2, Cout => Cout3);
+			
+	x4: XOR_2 port map (A => B3, B => M, Y => k4);
+	fa4: Full_Adder
+			port map(A => A3, B => k4, Cin => Cout3, S => S3, Cout => Cout);
+end Nature;
