@@ -23,9 +23,9 @@ VU7DI`Tzl@EfAQ?4z53E2F2
 !s100 1`nWBgISBZCVoBKm`L3TM3
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1632034890
+Z7 !s110 1632036400
 !i10b 1
-Z8 !s108 1632034890.000000
+Z8 !s108 1632036400.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/Gates.vhdl|
 Z10 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/Gates.vhdl|
 !i113 1
@@ -65,11 +65,11 @@ Vo0U_joLQj6?PcdkaB<BVL1
 !s100 X9P6iWWY_2ezzl>NUH=lX1
 R6
 31
-R7
+Z17 !s110 1632036401
 !i10b 1
-R8
-Z17 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/atm.vhdl|
-Z18 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/atm.vhdl|
+Z18 !s108 1632036401.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/atm.vhdl|
+Z20 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/atm.vhdl|
 !i113 1
 R11
 R12
@@ -85,22 +85,22 @@ VTEGfk9=8=BIYga_X99Nbb3
 !s100 R7SbRdRCcSeWjQK:lf9UX0
 R6
 31
-Z19 !s110 1632034891
-!i10b 1
-R8
 R17
+!i10b 1
 R18
+R19
+R20
 !i113 1
 R11
 R12
 Ediv
-Z20 w1632029427
+Z21 w1632029427
 R2
 R3
 !i122 2
 R0
-Z21 8E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/divider.vhdl
-Z22 FE:/Academics/IIT Bombay/Repositories/VHDL/Midsem/divider.vhdl
+Z22 8E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/divider.vhdl
+Z23 FE:/Academics/IIT Bombay/Repositories/VHDL/Midsem/divider.vhdl
 l0
 L15 1
 Vng:zV@0gDc?MfnEIKj`Yh1
@@ -110,8 +110,8 @@ R6
 R7
 !i10b 1
 R8
-Z23 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/divider.vhdl|
-Z24 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/divider.vhdl|
+Z24 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/divider.vhdl|
+Z25 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/divider.vhdl|
 !i113 1
 R11
 R12
@@ -129,19 +129,19 @@ R6
 R7
 !i10b 1
 R8
-R23
 R24
+R25
 !i113 1
 R11
 R12
 Edut
-Z25 w1632034858
+Z26 w1632034858
 R2
 R3
 !i122 1
 R0
-Z26 8E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/DUT.vhdl
-Z27 FE:/Academics/IIT Bombay/Repositories/VHDL/Midsem/DUT.vhdl
+Z27 8E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/DUT.vhdl
+Z28 FE:/Academics/IIT Bombay/Repositories/VHDL/Midsem/DUT.vhdl
 l0
 L7 1
 V8ZCHWn:Xc5?aSQbIWn=mG0
@@ -151,8 +151,8 @@ R6
 R7
 !i10b 1
 R8
-Z28 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/DUT.vhdl|
-Z29 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/DUT.vhdl|
+Z29 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/DUT.vhdl|
+Z30 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/DUT.vhdl|
 !i113 1
 R11
 R12
@@ -170,8 +170,8 @@ R6
 R7
 !i10b 1
 R8
-R28
 R29
+R30
 !i113 1
 R11
 R12
@@ -362,23 +362,23 @@ R10
 R11
 R12
 Enotecounter
-Z30 w1632034469
+Z31 w1632034469
 R2
 R3
 R14
 !i122 4
 R0
-Z31 8E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/notecounter.vhdl
-Z32 FE:/Academics/IIT Bombay/Repositories/VHDL/Midsem/notecounter.vhdl
+Z32 8E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/notecounter.vhdl
+Z33 FE:/Academics/IIT Bombay/Repositories/VHDL/Midsem/notecounter.vhdl
 l0
 L8 1
 V3:5Ogi6FG7l_5d6QLmkV20
 !s100 4PQ7g;CF34Qd=;o?86FT93
 R6
 31
-R19
+R17
 !i10b 1
-Z33 !s108 1632034891.000000
+R18
 Z34 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/notecounter.vhdl|
 Z35 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/notecounter.vhdl|
 !i113 1
@@ -396,9 +396,9 @@ VW_KGO]F]H64f4chMJ@K]O0
 !s100 R2f:o]]0^WDP?8[nS<Pl21
 R6
 31
-R19
+R17
 !i10b 1
-R33
+R18
 R34
 R35
 !i113 1
@@ -460,9 +460,9 @@ VVm@IoZYI=ZdT^R2nkX4nY1
 !s100 VO5=T90k[J1AiQ_TeDRj90
 R6
 31
-R19
+R17
 !i10b 1
-R33
+R18
 Z39 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/priorityfinder.vhdl|
 Z40 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/priorityfinder.vhdl|
 !i113 1
@@ -480,9 +480,9 @@ VCIWoYaEZF[HAQ:CGUfo;b2
 !s100 hQXdOa^ceTFWNd@:J?MXo2
 R6
 31
-R19
+R17
 !i10b 1
-R33
+R18
 R39
 R40
 !i113 1
@@ -502,9 +502,9 @@ V]iKK_Z9L:G9B:i8c]3eFH0
 !s100 bWf8kl8zb90X@P1m>V^K20
 R6
 31
-R19
+R17
 !i10b 1
-R33
+R18
 Z44 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/Testbench.vhdl|
 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/Testbench.vhdl|
 !i113 1
@@ -521,9 +521,9 @@ VMFVXONF>j6N=LN^h]KWiF2
 !s100 AbiOJPESJoaI^C9H63Kn[2
 R6
 31
-R19
+R17
 !i10b 1
-R33
+R18
 R44
 Z45 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Midsem/Testbench.vhdl|
 !i113 1
