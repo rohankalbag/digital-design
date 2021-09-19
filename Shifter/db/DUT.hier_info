@@ -1,0 +1,1378 @@
+|DUT
+input_vector[0] => Shifter:add_instance.A[0]
+input_vector[1] => Shifter:add_instance.A[1]
+input_vector[2] => Shifter:add_instance.A[2]
+input_vector[3] => Shifter:add_instance.A[3]
+input_vector[4] => Shifter:add_instance.A[4]
+input_vector[5] => Shifter:add_instance.A[5]
+input_vector[6] => Shifter:add_instance.A[6]
+input_vector[7] => Shifter:add_instance.A[7]
+input_vector[8] => Shifter:add_instance.B[0]
+input_vector[9] => Shifter:add_instance.B[1]
+input_vector[10] => Shifter:add_instance.B[2]
+input_vector[11] => Shifter:add_instance.L
+output_vector[0] << Shifter:add_instance.Y[0]
+output_vector[1] << Shifter:add_instance.Y[1]
+output_vector[2] << Shifter:add_instance.Y[2]
+output_vector[3] << Shifter:add_instance.Y[3]
+output_vector[4] << Shifter:add_instance.Y[4]
+output_vector[5] << Shifter:add_instance.Y[5]
+output_vector[6] << Shifter:add_instance.Y[6]
+output_vector[7] << Shifter:add_instance.Y[7]
+
+
+|DUT|Shifter:add_instance
+A[0] => Reverser:rev1.A[0]
+A[1] => Reverser:rev1.A[1]
+A[2] => Reverser:rev1.A[2]
+A[3] => Reverser:rev1.A[3]
+A[4] => Reverser:rev1.A[4]
+A[5] => Reverser:rev1.A[5]
+A[6] => Reverser:rev1.A[6]
+A[7] => Reverser:rev1.A[7]
+B[0] => TwoxOne:n1_bit:0:lsb:b2.S
+B[0] => TwoxOne:n1_bit:1:lsb:b2.S
+B[0] => TwoxOne:n1_bit:2:lsb:b2.S
+B[0] => TwoxOne:n1_bit:3:lsb:b2.S
+B[0] => TwoxOne:n1_bit:4:lsb:b2.S
+B[0] => TwoxOne:n1_bit:5:lsb:b2.S
+B[0] => TwoxOne:n1_bit:6:lsb:b2.S
+B[0] => TwoxOne:n1_bit:7:msb:b2.S
+B[1] => TwoxOne:n2_bit:0:lsb:b2.S
+B[1] => TwoxOne:n2_bit:1:lsb:b2.S
+B[1] => TwoxOne:n2_bit:2:lsb:b2.S
+B[1] => TwoxOne:n2_bit:3:lsb:b2.S
+B[1] => TwoxOne:n2_bit:4:lsb:b2.S
+B[1] => TwoxOne:n2_bit:5:lsb:b2.S
+B[1] => TwoxOne:n2_bit:6:msb:b2.S
+B[1] => TwoxOne:n2_bit:7:msb:b2.S
+B[2] => TwoxOne:n4_bit:0:lsb:b2.S
+B[2] => TwoxOne:n4_bit:1:lsb:b2.S
+B[2] => TwoxOne:n4_bit:2:lsb:b2.S
+B[2] => TwoxOne:n4_bit:3:lsb:b2.S
+B[2] => TwoxOne:n4_bit:4:msb:b2.S
+B[2] => TwoxOne:n4_bit:5:msb:b2.S
+B[2] => TwoxOne:n4_bit:6:msb:b2.S
+B[2] => TwoxOne:n4_bit:7:msb:b2.S
+L => Reverser:rev1.L
+L => Reverser:rev2.L
+Y[0] <= Reverser:rev2.Y[0]
+Y[1] <= Reverser:rev2.Y[1]
+Y[2] <= Reverser:rev2.Y[2]
+Y[3] <= Reverser:rev2.Y[3]
+Y[4] <= Reverser:rev2.Y[4]
+Y[5] <= Reverser:rev2.Y[5]
+Y[6] <= Reverser:rev2.Y[6]
+Y[7] <= Reverser:rev2.Y[7]
+
+
+|DUT|Shifter:add_instance|Reverser:rev1
+A[0] => TwoxOne:b1:0:b2.I0
+A[0] => TwoxOne:b1:7:b2.I1
+A[1] => TwoxOne:b1:1:b2.I0
+A[1] => TwoxOne:b1:6:b2.I1
+A[2] => TwoxOne:b1:2:b2.I0
+A[2] => TwoxOne:b1:5:b2.I1
+A[3] => TwoxOne:b1:3:b2.I0
+A[3] => TwoxOne:b1:4:b2.I1
+A[4] => TwoxOne:b1:3:b2.I1
+A[4] => TwoxOne:b1:4:b2.I0
+A[5] => TwoxOne:b1:2:b2.I1
+A[5] => TwoxOne:b1:5:b2.I0
+A[6] => TwoxOne:b1:1:b2.I1
+A[6] => TwoxOne:b1:6:b2.I0
+A[7] => TwoxOne:b1:0:b2.I1
+A[7] => TwoxOne:b1:7:b2.I0
+L => TwoxOne:b1:0:b2.S
+L => TwoxOne:b1:1:b2.S
+L => TwoxOne:b1:2:b2.S
+L => TwoxOne:b1:3:b2.S
+L => TwoxOne:b1:4:b2.S
+L => TwoxOne:b1:5:b2.S
+L => TwoxOne:b1:6:b2.S
+L => TwoxOne:b1:7:b2.S
+Y[0] <= TwoxOne:b1:0:b2.Y
+Y[1] <= TwoxOne:b1:1:b2.Y
+Y[2] <= TwoxOne:b1:2:b2.Y
+Y[3] <= TwoxOne:b1:3:b2.Y
+Y[4] <= TwoxOne:b1:4:b2.Y
+Y[5] <= TwoxOne:b1:5:b2.Y
+Y[6] <= TwoxOne:b1:6:b2.Y
+Y[7] <= TwoxOne:b1:7:b2.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:0:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:0:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:0:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:0:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:0:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:1:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:1:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:1:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:1:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:1:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:2:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:2:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:2:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:2:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:2:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:3:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:3:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:3:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:3:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:3:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:4:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:4:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:4:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:4:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:4:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:5:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:5:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:5:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:5:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:5:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:6:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:6:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:6:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:6:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:6:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:7:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:7:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:7:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:7:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev1|TwoxOne:\b1:7:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:0:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:0:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:0:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:0:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:0:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:1:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:1:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:1:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:1:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:1:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:2:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:2:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:2:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:2:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:2:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:3:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:3:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:3:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:3:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:3:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:4:msb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:4:msb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:4:msb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:4:msb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:4:msb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:5:msb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:5:msb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:5:msb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:5:msb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:5:msb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:6:msb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:6:msb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:6:msb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:6:msb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:6:msb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:7:msb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:7:msb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:7:msb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:7:msb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n4_bit:7:msb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:0:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:0:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:0:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:0:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:0:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:1:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:1:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:1:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:1:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:1:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:2:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:2:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:2:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:2:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:2:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:3:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:3:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:3:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:3:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:3:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:4:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:4:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:4:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:4:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:4:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:5:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:5:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:5:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:5:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:5:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:6:msb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:6:msb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:6:msb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:6:msb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:6:msb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:7:msb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:7:msb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:7:msb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:7:msb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n2_bit:7:msb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:0:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:0:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:0:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:0:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:0:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:1:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:1:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:1:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:1:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:1:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:2:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:2:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:2:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:2:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:2:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:3:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:3:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:3:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:3:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:3:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:4:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:4:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:4:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:4:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:4:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:5:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:5:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:5:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:5:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:5:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:6:lsb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:6:lsb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:6:lsb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:6:lsb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:6:lsb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:7:msb:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:7:msb:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:7:msb:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:7:msb:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|TwoxOne:\n1_bit:7:msb:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2
+A[0] => TwoxOne:b1:0:b2.I0
+A[0] => TwoxOne:b1:7:b2.I1
+A[1] => TwoxOne:b1:1:b2.I0
+A[1] => TwoxOne:b1:6:b2.I1
+A[2] => TwoxOne:b1:2:b2.I0
+A[2] => TwoxOne:b1:5:b2.I1
+A[3] => TwoxOne:b1:3:b2.I0
+A[3] => TwoxOne:b1:4:b2.I1
+A[4] => TwoxOne:b1:3:b2.I1
+A[4] => TwoxOne:b1:4:b2.I0
+A[5] => TwoxOne:b1:2:b2.I1
+A[5] => TwoxOne:b1:5:b2.I0
+A[6] => TwoxOne:b1:1:b2.I1
+A[6] => TwoxOne:b1:6:b2.I0
+A[7] => TwoxOne:b1:0:b2.I1
+A[7] => TwoxOne:b1:7:b2.I0
+L => TwoxOne:b1:0:b2.S
+L => TwoxOne:b1:1:b2.S
+L => TwoxOne:b1:2:b2.S
+L => TwoxOne:b1:3:b2.S
+L => TwoxOne:b1:4:b2.S
+L => TwoxOne:b1:5:b2.S
+L => TwoxOne:b1:6:b2.S
+L => TwoxOne:b1:7:b2.S
+Y[0] <= TwoxOne:b1:0:b2.Y
+Y[1] <= TwoxOne:b1:1:b2.Y
+Y[2] <= TwoxOne:b1:2:b2.Y
+Y[3] <= TwoxOne:b1:3:b2.Y
+Y[4] <= TwoxOne:b1:4:b2.Y
+Y[5] <= TwoxOne:b1:5:b2.Y
+Y[6] <= TwoxOne:b1:6:b2.Y
+Y[7] <= TwoxOne:b1:7:b2.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:0:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:0:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:0:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:0:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:0:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:1:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:1:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:1:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:1:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:1:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:2:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:2:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:2:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:2:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:2:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:3:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:3:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:3:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:3:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:3:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:4:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:4:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:4:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:4:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:4:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:5:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:5:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:5:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:5:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:5:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:6:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:6:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:6:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:6:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:6:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:7:b2
+I0 => AND_2:a1.A
+I1 => AND_2:a2.B
+S => INVERTER:inv1.A
+S => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:7:b2|INVERTER:inv1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:7:b2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:7:b2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Shifter:add_instance|Reverser:rev2|TwoxOne:\b1:7:b2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
