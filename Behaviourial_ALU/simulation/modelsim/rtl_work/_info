@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/simulation/modelsim
+Ealu_beh
+Z1 w1632222870
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8E:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/ALU.vhdl
+Z5 FE:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/ALU.vhdl
+l0
+L5 1
+V;G2E;gFNbV0D4cFzIZoi^1
+!s100 >RbVd0oiK7G=D`5=IKoD11
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1632222924
+!i10b 1
+Z8 !s108 1632222924.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/ALU.vhdl|
+Z10 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/ALU.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aa1
+R2
+R3
+DEx4 work 7 alu_beh 0 22 ;G2E;gFNbV0D4cFzIZoi^1
+!i122 1
+l44
+L18 49
+Vc^Ec>LOaVlbgA>2F7k<[]0
+!s100 j7f`jaeD7z<LO6IQX78`U0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1632220381
+R2
+R3
+!i122 0
+R0
+Z14 8E:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/DUT.vhdl
+Z15 FE:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/DUT.vhdl
+l0
+L7 1
+VbmXbUKS9hk]j<JcKW^`XE3
+!s100 0HN]_Vk3LF^M?I:W0n;9R2
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/DUT.vhdl|
+Z17 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 bmXbUKS9hk]j<JcKW^`XE3
+!i122 0
+l25
+L12 23
+VXE3L2?NaZiNS6aefRG9cm3
+!s100 No1@CZEa3gLCKEjia9QVI1
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Etestbench
+Z18 w1632220143
+R3
+R2
+!i122 2
+R0
+Z19 8E:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/Testbench.vhdl
+Z20 FE:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+Z21 !s110 1632222925
+!i10b 1
+Z22 !s108 1632222925.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/Testbench.vhdl|
+!s107 E:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 2
+l69
+L9 132
+VkCH_C@L?WYiI>;]4:BgD23
+!s100 S6Qef:FIh0PQ`B8jQbmO52
+R6
+31
+R21
+!i10b 1
+R22
+R23
+Z24 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Behaviourial_ALU/Testbench.vhdl|
+!i113 1
+R11
+R12
