@@ -1,0 +1,54 @@
+|DUT
+input_vector[0] => FourbitFourxOne:add_instance.sel[0]
+input_vector[1] => FourbitFourxOne:add_instance.sel[1]
+input_vector[2] => FourbitFourxOne:add_instance.A[0]
+input_vector[3] => FourbitFourxOne:add_instance.A[1]
+input_vector[4] => FourbitFourxOne:add_instance.A[2]
+input_vector[5] => FourbitFourxOne:add_instance.A[3]
+input_vector[6] => FourbitFourxOne:add_instance.B[0]
+input_vector[7] => FourbitFourxOne:add_instance.B[1]
+input_vector[8] => FourbitFourxOne:add_instance.B[2]
+input_vector[9] => FourbitFourxOne:add_instance.B[3]
+input_vector[10] => FourbitFourxOne:add_instance.C[0]
+input_vector[11] => FourbitFourxOne:add_instance.C[1]
+input_vector[12] => FourbitFourxOne:add_instance.C[2]
+input_vector[13] => FourbitFourxOne:add_instance.C[3]
+input_vector[14] => FourbitFourxOne:add_instance.D[0]
+input_vector[15] => FourbitFourxOne:add_instance.D[1]
+input_vector[16] => FourbitFourxOne:add_instance.D[2]
+input_vector[17] => FourbitFourxOne:add_instance.D[3]
+output_vector[0] << FourbitFourxOne:add_instance.Y[0]
+output_vector[1] << FourbitFourxOne:add_instance.Y[1]
+output_vector[2] << FourbitFourxOne:add_instance.Y[2]
+output_vector[3] << FourbitFourxOne:add_instance.Y[3]
+
+
+|DUT|FourbitFourxOne:add_instance
+A[0] => Y.DATAB
+A[1] => Y.DATAB
+A[2] => Y.DATAB
+A[3] => Y.DATAB
+B[0] => Y.DATAB
+B[1] => Y.DATAB
+B[2] => Y.DATAB
+B[3] => Y.DATAB
+C[0] => Y.DATAB
+C[1] => Y.DATAB
+C[2] => Y.DATAB
+C[3] => Y.DATAB
+D[0] => Y.DATAA
+D[1] => Y.DATAA
+D[2] => Y.DATAA
+D[3] => Y.DATAA
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN1
+sel[0] => Equal2.IN0
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN0
+sel[1] => Equal2.IN1
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
