@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+library work;
+use work.Gates.all;
+
+entity VowelFinder is
+  port (X0, X1, X2, X3: in std_logic; Y: out std_logic);
+end entity VowelFinder;
+
+architecture Struct of VowelFinder is
+  signal S1,S2,S3,S4,S5: std_logic;
+begin
+  -- component instances
+  n1: INVERTER port map(A => X0, Y => S1);
+  a1: AND_2 port map(A => X2, B => S2, Y => S3);
+  a3: AND_2 port map(A => S1, B => S5, Y => Y);
+  o1: OR_2 port map(A => S3, B => S4, Y => S5);
+  xnor1: XNOR_2 port map(A => X1, B => X3, Y => S2);
+  nor1: NOR_2 port map(A => X1, B => X2, Y => S4);
+end Struct;

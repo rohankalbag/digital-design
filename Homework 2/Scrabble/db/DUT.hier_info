@@ -1,0 +1,28 @@
+|DUT
+input_vector[0] => Scrabble:add_instance.X[0]
+input_vector[1] => Scrabble:add_instance.X[1]
+input_vector[2] => Scrabble:add_instance.X[2]
+input_vector[3] => Scrabble:add_instance.X[3]
+output_vector[0] <= Scrabble:add_instance.Y
+
+
+|DUT|Scrabble:add_instance
+X[0] => Equal0.IN3
+X[0] => Equal1.IN2
+X[0] => Equal2.IN3
+X[0] => Equal3.IN0
+X[1] => Equal0.IN2
+X[1] => Equal1.IN3
+X[1] => Equal2.IN0
+X[1] => Equal3.IN3
+X[2] => Equal0.IN1
+X[2] => Equal1.IN1
+X[2] => Equal2.IN2
+X[2] => Equal3.IN2
+X[3] => Equal0.IN0
+X[3] => Equal1.IN0
+X[3] => Equal2.IN1
+X[3] => Equal3.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
