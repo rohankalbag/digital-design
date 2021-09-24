@@ -1,0 +1,55 @@
+|DUT
+input_vector[0] => ThreeToEight:add_instance.A[0]
+input_vector[1] => ThreeToEight:add_instance.A[1]
+input_vector[2] => ThreeToEight:add_instance.A[2]
+input_vector[3] => ThreeToEight:add_instance.A[3]
+output_vector[0] <= ThreeToEight:add_instance.Y[0]
+output_vector[1] <= ThreeToEight:add_instance.Y[1]
+output_vector[2] <= ThreeToEight:add_instance.Y[2]
+output_vector[3] <= ThreeToEight:add_instance.Y[3]
+output_vector[4] <= ThreeToEight:add_instance.Y[4]
+output_vector[5] <= ThreeToEight:add_instance.Y[5]
+output_vector[6] <= ThreeToEight:add_instance.Y[6]
+output_vector[7] <= ThreeToEight:add_instance.Y[7]
+
+
+|DUT|ThreeToEight:add_instance
+A[0] => Y.OUTPUTSELECT
+A[0] => Y.OUTPUTSELECT
+A[0] => Y.OUTPUTSELECT
+A[0] => Y.OUTPUTSELECT
+A[0] => Y.OUTPUTSELECT
+A[0] => Y.OUTPUTSELECT
+A[0] => Y.OUTPUTSELECT
+A[0] => Y.OUTPUTSELECT
+A[1] => Equal0.IN2
+A[1] => Equal1.IN2
+A[1] => Equal2.IN1
+A[1] => Equal3.IN2
+A[1] => Equal4.IN1
+A[1] => Equal5.IN2
+A[1] => Equal6.IN0
+A[2] => Equal0.IN1
+A[2] => Equal1.IN1
+A[2] => Equal2.IN2
+A[2] => Equal3.IN1
+A[2] => Equal4.IN0
+A[2] => Equal5.IN0
+A[2] => Equal6.IN2
+A[3] => Equal0.IN0
+A[3] => Equal1.IN0
+A[3] => Equal2.IN0
+A[3] => Equal3.IN0
+A[3] => Equal4.IN2
+A[3] => Equal5.IN1
+A[3] => Equal6.IN1
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[7] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
