@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {DUT.vho}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:01:54 on Sep 25,2021
+# Start time: 15:37:41 on Sep 28,2021
 # vcom -reportprogress 300 -93 -work work DUT.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -23,30 +23,28 @@
 # -- Loading package maxv_components
 # -- Compiling entity DUT
 # -- Compiling architecture structure of DUT
-# End time: 01:01:54 on Sep 25,2021, Elapsed time: 0:00:00
+# End time: 15:37:41 on Sep 28,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Testbench.vhdl}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:01:55 on Sep 25,2021
+# Start time: 15:37:41 on Sep 28,2021
 # vcom -reportprogress 300 -93 -work work E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Testbench.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Testbench
 # -- Compiling architecture Behave of Testbench
-# End time: 01:01:55 on Sep 25,2021, Elapsed time: 0:00:00
+# End time: 15:37:41 on Sep 28,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /dut_instance=DUT_vhd.sdo -L maxv -L gate_work -L work -voptargs="+acc"  Testbench
 # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -sdftyp "/dut_instance=DUT_vhd.sdo" -L maxv -L gate_work -L work -voptargs=""+acc"" Testbench 
-# Start time: 01:01:55 on Sep 25,2021
+# Start time: 15:37:41 on Sep 28,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.testbench(behave)
-# SDF 2020.1 Compiler 2020.02 Feb 28 2020
-# 
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading maxv.maxv_atom_pack(body)
@@ -70,5 +68,5 @@
 # run -all
 # ** Note: SUCCESS, all tests passed.
 #    Time: 384 ns  Iteration: 0  Instance: /testbench
-# End time: 01:02:07 on Sep 25,2021, Elapsed time: 0:00:12
+# End time: 15:38:05 on Sep 28,2021, Elapsed time: 0:00:24
 # Errors: 0, Warnings: 0

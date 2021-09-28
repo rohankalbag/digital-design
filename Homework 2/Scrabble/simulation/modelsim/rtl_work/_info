@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dE:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/simulation/modelsim
 Edut
-Z1 w1632510917
+Z1 w1632511824
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 1
@@ -23,9 +23,9 @@ V>1T<VOMo<Ne`;k1om:2Id2
 !s100 ;OhjzM9?Cg]ggKecYYO>m3
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1632511652
+Z7 !s110 1632823584
 !i10b 1
-Z8 !s108 1632511652.000000
+Z8 !s108 1632823584.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/DUT.vhdl|
 Z10 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/DUT.vhdl|
 !i113 1
@@ -38,8 +38,8 @@ DEx4 work 3 dut 0 22 >1T<VOMo<Ne`;k1om:2Id2
 !i122 1
 l16
 L12 15
-VfTFL`S=EUeV;A?8IhF7hd1
-!s100 RnCiCn6PP_E1@NW`[HdHa2
+VcKBOeCL6j8z8gZShD716:0
+!s100 ;0Te_iXElAU;omKT:eQX92
 R6
 31
 R7
@@ -50,24 +50,65 @@ R10
 !i113 1
 R11
 R12
+Escrabble
+Z13 w1632511855
+R2
+R3
+!i122 0
+R0
+Z14 8E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Scrabble.vhdl
+Z15 FE:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Scrabble.vhdl
+l0
+L4 1
+V]eKVVkhSYJJFK>SSJ8?1V3
+!s100 TXAABn73NE]RhdDoEPo7I3
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Scrabble.vhdl|
+Z17 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Scrabble.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 8 scrabble 0 22 ]eKVVkhSYJJFK>SSJ8?1V3
+!i122 0
+l9
+L8 17
+VWTLChTASLH;Fh29i9__dJ2
+!s100 `NSGYZ4o5WM>YT3<[eP:Q0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
 Etestbench
-Z13 w1629195252
+Z18 w1629195252
 R3
 R2
 !i122 2
 R0
-Z14 8E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Testbench.vhdl
-Z15 FE:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Testbench.vhdl
+Z19 8E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Testbench.vhdl
+Z20 FE:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Testbench.vhdl
 l0
 L7 1
 V]iKK_Z9L:G9B:i8c]3eFH0
 !s100 bWf8kl8zb90X@P1m>V^K20
 R6
 31
-Z16 !s110 1632511653
+Z21 !s110 1632823585
 !i10b 1
-Z17 !s108 1632511653.000000
-Z18 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Testbench.vhdl|
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Testbench.vhdl|
 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Testbench.vhdl|
 !i113 1
 R11
@@ -83,52 +124,11 @@ V203;8hF;2DY`Z[d6JJ@a90
 !s100 Xk;_AJVj`d1R?n>jVDgS>0
 R6
 31
-R16
-!i10b 1
-R17
-R18
-Z19 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Testbench.vhdl|
-!i113 1
-R11
-R12
-Evowelfinder
-Z20 w1632511570
-R2
-R3
-!i122 0
-R0
-Z21 8E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Scrabble.vhdl
-Z22 FE:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Scrabble.vhdl
-l0
-L4 1
-VcHMUn@_CoTBocEjdO318I0
-!s100 Llg0AXSgXo:]HjSgRdk]g0
-R6
-31
-R7
+R21
 !i10b 1
 R8
-Z23 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Scrabble.vhdl|
-Z24 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Scrabble.vhdl|
-!i113 1
-R11
-R12
-Astruct
-R2
-R3
-DEx4 work 11 vowelfinder 0 22 cHMUn@_CoTBocEjdO318I0
-!i122 0
-l9
-L8 17
-VG63<MdEHkEa2dgiFQgo4A0
-!s100 8ILk``YiJC<7?MjKQTkGW2
-R6
-31
-R7
-!i10b 1
-R8
-R23
-R24
+R22
+Z23 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 2/Scrabble/Testbench.vhdl|
 !i113 1
 R11
 R12

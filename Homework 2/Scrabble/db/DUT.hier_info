@@ -3,7 +3,7 @@ input_vector[0] => Scrabble:add_instance.X[0]
 input_vector[1] => Scrabble:add_instance.X[1]
 input_vector[2] => Scrabble:add_instance.X[2]
 input_vector[3] => Scrabble:add_instance.X[3]
-output_vector[0] <= Scrabble:add_instance.Y
+output_vector[0] << Scrabble:add_instance.Y
 
 
 |DUT|Scrabble:add_instance

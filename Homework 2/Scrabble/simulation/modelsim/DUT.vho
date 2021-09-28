@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
--- DATE "09/25/2021 01:01:21"
+-- DATE "09/28/2021 15:38:47"
 
 -- 
 -- Device: Altera 5M1270ZT144C5 Package TQFP144
@@ -35,7 +35,7 @@ USE MAXV.MAXV_COMPONENTS.ALL;
 ENTITY 	DUT IS
     PORT (
 	input_vector : IN std_logic_vector(3 DOWNTO 0);
-	output_vector : OUT std_logic_vector(0 DOWNTO 0)
+	output_vector : BUFFER std_logic_vector(0 DOWNTO 0)
 	);
 END DUT;
 
