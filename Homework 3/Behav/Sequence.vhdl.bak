@@ -1,0 +1,35 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all; 
+
+entity sequence_generator_structural is
+port (reset,clock: in std_logic;
+y:out std_logic_vector(2 downto 0));
+end entity sequence_generator_structural;
+
+architecture struct of sequence_generator_structural is 
+signal D2,D1,D0 :std_logic;
+signal Q:std_logic_vector(2 downto 0);
+begin
+-- write the equations here
+D2 <= Q(2) xnor (Q(0) xor Q(1));
+D1 <= (Q(2) and (not Q(0))) or ((not Q(0)) and (not Q(1)));
+D0 <= (Q(0) and (not Q(2))) or (Q(1) and Q(2));
+y(2)<= (not reset) and D2;
+y(1)<= reset or D1;
+y(0)<= (not reset) and D0;
+
+
+-- Do the port mapping                          --asynchronous reset
+--Q0
+dff_0  : dff2 port map(D => d2, clk => clock, reset => reset, Q => Y(2));
+
+--Q1
+dff_1  : dff1 port map(D => d1, clk => clock, reset => reset, Q => Y(1));
+
+--Q2
+dff_2  : dff2 port map(D => d0, clk => clock, reset => reset, Q => Y(0));
+
+
+end struct;
