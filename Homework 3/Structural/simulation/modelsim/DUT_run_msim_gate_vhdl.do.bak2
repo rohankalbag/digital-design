@@ -7,7 +7,7 @@ vmap work gate_work
 
 vcom -93 -work work {DUT.vho}
 
-vcom -93 -work work {E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl}
+vcom -93 -work work {E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Testbench.vhdl}
 
 vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /dut_instance=DUT_vhd.sdo -L maxv -L gate_work -L work -voptargs="+acc"  Testbench
 

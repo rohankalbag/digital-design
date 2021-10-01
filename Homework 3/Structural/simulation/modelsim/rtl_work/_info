@@ -8,79 +8,38 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dE:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/simulation/modelsim
+Z0 dE:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/simulation/modelsim
 Eand_2
-Z1 w1632827895
+Z1 w1632915188
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
 R0
-Z4 8E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl
-Z5 FE:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl
+Z4 8E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl
+Z5 FE:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl
 l0
-L59 1
-VEZ2D<X;^P<mhD?oYSoZVj1
-!s100 I6a;h`m1l>_P==[;fjQ`@1
+L56 1
+V^<@S]C[a0o`<5z]A6^QEI3
+!s100 >c97M_;fFCB48AL2f[iKC2
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1632828131
+Z7 !s110 1633093425
 !i10b 1
-Z8 !s108 1632828131.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl|
-Z10 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl|
+Z8 !s108 1633093425.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl|
+Z10 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1 CvgOpt 0
 Aequations
 R2
 R3
-DEx4 work 5 and_2 0 22 EZ2D<X;^P<mhD?oYSoZVj1
+DEx4 work 5 and_2 0 22 ^<@S]C[a0o`<5z]A6^QEI3
 !i122 0
-l64
-L63 4
-VY^DPFg?I0<FA[cHI4QgS90
-!s100 OS4[mm7YAehBWh`cRa9VV2
-R6
-31
-R7
-!i10b 1
-R8
-R9
-R10
-!i113 1
-R11
-R12
-Edff1
-R1
-R2
-R3
-!i122 0
-R0
-R4
-R5
-l0
-L155 1
-VQkhlTUAQl<b2<P^1OO:RE0
-!s100 iKK_dV0ZbQ;n4na9D<7a`3
-R6
-31
-R7
-!i10b 1
-R8
-R9
-R10
-!i113 1
-R11
-R12
-Abehav
-R2
-R3
-DEx4 work 4 dff1 0 22 QkhlTUAQl<b2<P^1OO:RE0
-!i122 0
-l158
-L157 12
-V<mLGoHSUg=B?3SHAk787d3
-!s100 Yn]oDO8MQNGFQKnhc6IZ21
+l61
+L60 4
+Vi7`04d:YUkZ:LXCBHI`>R2
+!s100 I>aFk>kT5NUl>7o8>[^323
 R6
 31
 R7
@@ -100,9 +59,9 @@ R0
 R4
 R5
 l0
-L138 1
-VP4gR]gg[nhI3a7YW:X=bG2
-!s100 jWmLDJ5F1IP3zTh4`Ee>n1
+L135 1
+Vl1;A9M07j95DZ8`5FI8@W0
+!s100 ^BWGDYQlM2LS?zT]j^iZZ3
 R6
 31
 R7
@@ -116,12 +75,12 @@ R12
 Abehav
 R2
 R3
-DEx4 work 4 dff2 0 22 P4gR]gg[nhI3a7YW:X=bG2
+DEx4 work 4 dff2 0 22 l1;A9M07j95DZ8`5FI8@W0
 !i122 0
-l141
-L140 12
-V5;J:DV_8VSHg<Phi?bBRe0
-!s100 i?CWc>9GWnNjgT2mz4`YQ3
+l138
+L137 12
+V:V?f5LXO6PO<08amGK4;L2
+!s100 _`7a7J_8JfSg^dV7B3aiC0
 R6
 31
 R7
@@ -133,43 +92,43 @@ R10
 R11
 R12
 Edut
-Z13 w1632826759
+Z13 w1632914514
 R2
 R3
 !i122 1
 R0
-Z14 8E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/DUT.vhdl
-Z15 FE:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/DUT.vhdl
+Z14 8E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl
+Z15 FE:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl
 l0
 L7 1
-ViYST@ah<HLdN^@OdP:4oM1
-!s100 z0O99WdUb8cQiz`1AABml0
+Vf[i;Aa?kTDS6GD>YBjnWJ0
+!s100 hB1n]XCSP2VmFcg2i[R4e3
 R6
 31
-Z16 !s110 1632828132
+R7
 !i10b 1
 R8
-Z17 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/DUT.vhdl|
-Z18 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/DUT.vhdl|
+Z16 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl|
+Z17 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl|
 !i113 1
 R11
 R12
 Adutwrap
 R2
 R3
-DEx4 work 3 dut 0 22 iYST@ah<HLdN^@OdP:4oM1
+DEx4 work 3 dut 0 22 f[i;Aa?kTDS6GD>YBjnWJ0
 !i122 1
 l17
 L12 14
-VXR;=9gD`YSH>[Q^bIm@[l1
-!s100 80><mMIN<kXWD<S1KGU@53
+Vd5i6U7g=Y=<=cX327=df>0
+!s100 ET?TBgYz1E`zW00WXWFUT1
 R6
 31
-R16
+R7
 !i10b 1
 R8
+R16
 R17
-R18
 !i113 1
 R11
 R12
@@ -183,8 +142,8 @@ R4
 R5
 l0
 L3 1
-VhG5;@Mmd?1M>8W6=D=7Gz2
-!s100 V1F?h<HlM][@G^kz?C8gI0
+V[cXl;;Ph51]84C<jL4j373
+!s100 bj<oEc^1DH<VV:o2dc[_b0
 R6
 31
 R7
@@ -204,9 +163,9 @@ R0
 R4
 R5
 l0
-L126 1
-VO5`?Bi9H0U1Y=nH8I;W:;3
-!s100 Mn5Xn5oeBf<SEh^kmV@?K0
+L123 1
+VbDm=HfUnO`6mSBX@<?Aom0
+!s100 SB;>?8UHGFObO2>`HnE`H1
 R6
 31
 R7
@@ -220,12 +179,12 @@ R12
 Aequations
 R2
 R3
-DEx4 work 10 half_adder 0 22 O5`?Bi9H0U1Y=nH8I;W:;3
+DEx4 work 10 half_adder 0 22 bDm=HfUnO`6mSBX@<?Aom0
 !i122 0
-l131
-L130 5
-V_D0mFSDk>j4Q=bMR`f7AL1
-!s100 <JI05_lZCaJEIT;X>>cD61
+l128
+L127 5
+VNM7c9Qd@bKe6I@bL4FSEk1
+!s100 [2F1VDcl^mF4h4?8GIOng1
 R6
 31
 R7
@@ -245,9 +204,9 @@ R0
 R4
 R5
 l0
-L47 1
-VBIOamM3EK06VPlCm?A8YE2
-!s100 ^@6FTiNl<S76gX^6lE=Oo3
+L44 1
+Vg>kFzoD<k3POH:lX8DYRU1
+!s100 4zMf`KU=[U4HeO:hhHG4@3
 R6
 31
 R7
@@ -261,12 +220,12 @@ R12
 Aequations
 R2
 R3
-DEx4 work 8 inverter 0 22 BIOamM3EK06VPlCm?A8YE2
+DEx4 work 8 inverter 0 22 g>kFzoD<k3POH:lX8DYRU1
 !i122 0
-l52
-L51 4
-Vo?3RU59gRd979WAidJl>g0
-!s100 R:j7bZmz@DRP3]];CFDdR0
+l49
+L48 4
+VceDaA`O;Pz7aJG<S7bOeP3
+!s100 1lgla<781P7FVlERBL?YW3
 R6
 31
 R7
@@ -286,9 +245,9 @@ R0
 R4
 R5
 l0
-L70 1
-VcTH:KFODdnT[iCQSNbonf0
-!s100 2RYX9^CFh6J>LDg_n_R`X0
+L67 1
+Vcz[iTP_5REZg[QdGT99GB2
+!s100 eOQoo@6=9fT1fb9]mfik23
 R6
 31
 R7
@@ -302,12 +261,12 @@ R12
 Aequations
 R2
 R3
-DEx4 work 6 nand_2 0 22 cTH:KFODdnT[iCQSNbonf0
+DEx4 work 6 nand_2 0 22 cz[iTP_5REZg[QdGT99GB2
 !i122 0
-l75
-L74 4
-V>0LJ1Id[NSVG5HS07QAg>3
-!s100 l4gbXa5=bNlo^><@LnR;`3
+l72
+L71 4
+VVXV=_6VL`62fGRmPY`fQZ1
+!s100 VIAXCNHjQ<j<jIe9C2MPc3
 R6
 31
 R7
@@ -327,9 +286,9 @@ R0
 R4
 R5
 l0
-L92 1
-V6]fcS^>ff?d?DJ8R<2af>2
-!s100 Ic4o3N<AJ=3YGiKDUH]0n3
+L89 1
+VX?l7HPQ0Dc6Jh3];?hhWg0
+!s100 f;5_R1QO]zO<a_=hSE6g?2
 R6
 31
 R7
@@ -343,12 +302,12 @@ R12
 Aequations
 R2
 R3
-DEx4 work 5 nor_2 0 22 6]fcS^>ff?d?DJ8R<2af>2
+DEx4 work 5 nor_2 0 22 X?l7HPQ0Dc6Jh3];?hhWg0
 !i122 0
-l97
-L96 4
-V5B^knP:jA[lV:ojk[6n2Z0
-!s100 0TL1^49oGHGoelzZV[?`03
+l94
+L93 4
+VdQ:>D?:[CKQVDUY@k>j?Z3
+!s100 YG;BnUldPPS;;L81K=DSD2
 R6
 31
 R7
@@ -368,9 +327,9 @@ R0
 R4
 R5
 l0
-L81 1
-Vb1GTefmiRWhzjKL`5763o1
-!s100 ?JFE_HLXWaIm`6;@0?]J;0
+L78 1
+VO1:bEf=ZA0GzEik1BIB5K0
+!s100 [RU1?NY:Cc1Q@JeX2W9Qc1
 R6
 31
 R7
@@ -384,12 +343,12 @@ R12
 Aequations
 R2
 R3
-DEx4 work 4 or_2 0 22 b1GTefmiRWhzjKL`5763o1
+DEx4 work 4 or_2 0 22 O1:bEf=ZA0GzEik1BIB5K0
 !i122 0
-l86
-L85 4
-V;9^Ze9>c?KDSkchdnVga01
-!s100 Y_Ce[fd7^O:il?@j2I0Pe1
+l83
+L82 4
+VafEg<iI^D]IAJPgb@U2352
+!s100 ;M[gOSF:KFiN>DPkm>_1E3
 R6
 31
 R7
@@ -401,67 +360,67 @@ R10
 R11
 R12
 Esequence_generator_structural
-Z19 w1632827969
-Z20 DPx4 work 5 gates 0 22 hG5;@Mmd?1M>8W6=D=7Gz2
+Z18 w1633093356
+Z19 DPx4 work 5 gates 0 22 [cXl;;Ph51]84C<jL4j373
 R2
 R3
 !i122 2
 R0
-Z21 8E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Sequence.vhdl
-Z22 FE:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Sequence.vhdl
+Z20 8E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl
+Z21 FE:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl
 l0
 L6 1
-Vl08]X2jz[za[8C`jKaOYO2
-!s100 nASa4Q4Td:9WlLJXINZVX0
+VL_5DTIdRW_@KlYI8hT[R=2
+!s100 >fDBa_QUBKXdTPACRoVb43
 R6
 31
-R16
+Z22 !s110 1633093426
 !i10b 1
-Z23 !s108 1632828132.000000
-Z24 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Sequence.vhdl|
-Z25 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Sequence.vhdl|
+R8
+Z23 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl|
+Z24 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl|
 !i113 1
 R11
 R12
 Astruct
-R20
+R19
 R2
 R3
-DEx4 work 29 sequence_generator_structural 0 22 l08]X2jz[za[8C`jKaOYO2
+DEx4 work 29 sequence_generator_structural 0 22 L_5DTIdRW_@KlYI8hT[R=2
 !i122 2
 l14
-L11 25
-VSJH<EE6^]`ne3cGeU@@SL1
-!s100 kaY5?a55Rl8bXP:V032A;1
+L11 31
+Vd^mO0OD5M[;=oLD0zhMUz3
+!s100 YR>BEkIBXie?f_f8TFUNH1
 R6
 31
-R16
+R22
 !i10b 1
+R8
 R23
 R24
-R25
 !i113 1
 R11
 R12
 Etestbench
-Z26 w1632825648
+Z25 w1632914503
 R3
 R2
 !i122 3
 R0
-Z27 8E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Testbench.vhdl
-Z28 FE:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Testbench.vhdl
+Z26 8E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl
+Z27 FE:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl
 l0
 L7 1
 V]iKK_Z9L:G9B:i8c]3eFH0
 !s100 bWf8kl8zb90X@P1m>V^K20
 R6
 31
-R16
+R22
 !i10b 1
-R23
-Z29 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Testbench.vhdl|
-!s107 E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Testbench.vhdl|
+Z28 !s108 1633093426.000000
+Z29 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl|
+!s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl|
 !i113 1
 R11
 R12
@@ -472,15 +431,15 @@ DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
 !i122 3
 l69
 L9 132
-VG?TfCFLg6<HU7d`7mZfEC2
-!s100 JIFDnBN1e1gT6d0951eYT2
+VolF3lMRhQ]gRWA<VbDHVk3
+!s100 LH6KFbmS4bY[IH]L3IN8m0
 R6
 31
-R16
+R22
 !i10b 1
-R23
+R28
 R29
-Z30 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Testbench.vhdl|
+Z30 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl|
 !i113 1
 R11
 R12
@@ -493,9 +452,9 @@ R0
 R4
 R5
 l0
-L115 1
-VkM``B@@kUjFUEI^?:9G_91
-!s100 =Z<nTFhLU>M`HDzA_F?W<0
+L112 1
+VhASzMAlYEBEL8R<9eGmXh1
+!s100 RjCmZgWZS>GT0oV0d242:0
 R6
 31
 R7
@@ -509,12 +468,12 @@ R12
 Aequations
 R2
 R3
-DEx4 work 6 xnor_2 0 22 kM``B@@kUjFUEI^?:9G_91
+DEx4 work 6 xnor_2 0 22 hASzMAlYEBEL8R<9eGmXh1
 !i122 0
-l120
-L119 4
-V093O0V]GNhKB1AC<IL>[e3
-!s100 A=Rb9^m`0MVQ[LP@gjf`U3
+l117
+L116 4
+VRVl2;nNWd<LgJzjNFHQ?Z3
+!s100 S8I`WmoALle5njkPlb?eR3
 R6
 31
 R7
@@ -534,9 +493,9 @@ R0
 R4
 R5
 l0
-L104 1
-V3Sl8IEZ:EEQEWGMUJV?h22
-!s100 U>PYgi5MgTJT7Q8>odG:03
+L101 1
+V6E4L7zd4;Z2K@kd]:ZSQQ3
+!s100 MDhjz5]elUIC7>BQ=`82o1
 R6
 31
 R7
@@ -550,12 +509,12 @@ R12
 Aequations
 R2
 R3
-DEx4 work 5 xor_2 0 22 3Sl8IEZ:EEQEWGMUJV?h22
+DEx4 work 5 xor_2 0 22 6E4L7zd4;Z2K@kd]:ZSQQ3
 !i122 0
-l109
-L108 4
-VeUlcj]QO3FGDcNP:eje]@1
-!s100 nUlR2<;a:EcfU6m`:f;^a3
+l106
+L105 4
+VgOnLj;LHEW`;3@2Rfo62O3
+!s100 T?`5bHD@Z39k`?g>NH?Vj0
 R6
 31
 R7

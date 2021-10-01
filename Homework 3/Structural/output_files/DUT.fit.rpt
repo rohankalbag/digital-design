@@ -1,5 +1,5 @@
 Fitter report for DUT
-Tue Sep 28 17:15:31 2021
+Fri Oct 01 18:33:02 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Tue Sep 28 17:15:31 2021       ;
+; Fitter Status         ; Successful - Fri Oct 01 18:33:02 2021       ;
 ; Quartus Prime Version ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name         ; DUT                                         ;
 ; Top-level Entity Name ; DUT                                         ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 ; Device                ; 5M1270ZT144C5                               ;
 ; Timing Models         ; Final                                       ;
 ; Total logic elements  ; 3 / 1,270 ( < 1 % )                         ;
-; Total pins            ; 5 / 114 ( 4 % )                             ;
+; Total pins            ; 6 / 114 ( 5 % )                             ;
 ; Total virtual pins    ; 0                                           ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                               ;
 +-----------------------+---------------------------------------------+
@@ -140,7 +140,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/output_files/DUT.pin.
+The pin-out file can be found in E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/output_files/DUT.pin.
 
 
 +-------------------------------------------------------------------+
@@ -155,9 +155,9 @@ The pin-out file can be found in E:/Academics/IIT Bombay/Repositories/VHDL/Seque
 ;                                             ;                     ;
 ; Logic element usage by number of LUT inputs ;                     ;
 ;     -- 4 input functions                    ; 0                   ;
-;     -- 3 input functions                    ; 3                   ;
-;     -- 2 input functions                    ; 0                   ;
-;     -- 1 input functions                    ; 0                   ;
+;     -- 3 input functions                    ; 1                   ;
+;     -- 2 input functions                    ; 1                   ;
+;     -- 1 input functions                    ; 1                   ;
 ;     -- 0 input functions                    ; 0                   ;
 ;                                             ;                     ;
 ; Logic elements by mode                      ;                     ;
@@ -172,7 +172,7 @@ The pin-out file can be found in E:/Academics/IIT Bombay/Repositories/VHDL/Seque
 ; Total LABs                                  ; 1 / 127 ( < 1 % )   ;
 ; Logic elements in carry chains              ; 0                   ;
 ; Virtual pins                                ; 0                   ;
-; I/O pins                                    ; 5 / 114 ( 4 % )     ;
+; I/O pins                                    ; 6 / 114 ( 5 % )     ;
 ;     -- Clock pins                           ; 2 / 4 ( 50 % )      ;
 ;                                             ;                     ;
 ; UFM blocks                                  ; 0 / 1 ( 0 % )       ;
@@ -187,8 +187,8 @@ The pin-out file can be found in E:/Academics/IIT Bombay/Repositories/VHDL/Seque
 ; Peak interconnect usage (total/H/V)         ; 0.3% / 0.3% / 0.4%  ;
 ; Maximum fan-out                             ; 4                   ;
 ; Highest non-global fan-out                  ; 4                   ;
-; Total fan-out                               ; 18                  ;
-; Average fan-out                             ; 2.25                ;
+; Total fan-out                               ; 15                  ;
+; Average fan-out                             ; 1.67                ;
 +---------------------------------------------+---------------------+
 
 
@@ -207,9 +207,10 @@ The pin-out file can be found in E:/Academics/IIT Bombay/Repositories/VHDL/Seque
 +------------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
 ; Name             ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Slow Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Fast Output Connection ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
 +------------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
-; output_vector[0] ; 62    ; 4        ; 10           ; 3            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; output_vector[1] ; 63    ; 4        ; 10           ; 3            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; output_vector[2] ; 61    ; 4        ; 10           ; 3            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; output_vector[0] ; 139   ; 2        ; 5            ; 11           ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; output_vector[1] ; 61    ; 4        ; 10           ; 3            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; output_vector[2] ; 62    ; 4        ; 10           ; 3            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; output_vector[3] ; 63    ; 4        ; 10           ; 3            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
 +------------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
 
 
@@ -219,7 +220,7 @@ The pin-out file can be found in E:/Academics/IIT Bombay/Repositories/VHDL/Seque
 ; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
 +----------+-----------------+---------------+--------------+
 ; 1        ; 2 / 25 ( 8 % )  ; 3.3V          ; --           ;
-; 2        ; 0 / 30 ( 0 % )  ; 3.3V          ; --           ;
+; 2        ; 1 / 30 ( 3 % )  ; 3.3V          ; --           ;
 ; 3        ; 0 / 29 ( 0 % )  ; 3.3V          ; --           ;
 ; 4        ; 3 / 30 ( 10 % ) ; 3.3V          ; --           ;
 +----------+-----------------+---------------+--------------+
@@ -290,9 +291,9 @@ The pin-out file can be found in E:/Academics/IIT Bombay/Repositories/VHDL/Seque
 ; 58       ; 83         ; 4        ; GND*             ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 59       ; 84         ; 4        ; GND*             ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 60       ; 85         ; 4        ; GND*             ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 61       ; 86         ; 4        ; output_vector[2] ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 62       ; 87         ; 4        ; output_vector[0] ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 63       ; 88         ; 4        ; output_vector[1] ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 61       ; 86         ; 4        ; output_vector[1] ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 62       ; 87         ; 4        ; output_vector[2] ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 63       ; 88         ; 4        ; output_vector[3] ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 64       ;            ; 4        ; VCCIO4           ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 65       ;            ;          ; GNDIO            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 66       ; 91         ; 4        ; GND*             ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -368,7 +369,7 @@ The pin-out file can be found in E:/Academics/IIT Bombay/Repositories/VHDL/Seque
 ; 136      ;            ; 2        ; VCCIO2           ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 137      ; 199        ; 2        ; GND*             ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 138      ; 200        ; 2        ; GND*             ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 139      ; 201        ; 2        ; GND*             ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 139      ; 201        ; 2        ; output_vector[0] ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 140      ; 204        ; 2        ; GND*             ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 141      ; 205        ; 2        ; GND*             ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 142      ; 208        ; 2        ; GND*             ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -406,6 +407,7 @@ Note: User assignments will override these defaults. The user specified values a
 ; output_vector[0] ; Missing location assignment ;
 ; output_vector[1] ; Missing location assignment ;
 ; output_vector[2] ; Missing location assignment ;
+; output_vector[3] ; Missing location assignment ;
 ; input_vector[0]  ; Missing location assignment ;
 ; input_vector[1]  ; Missing location assignment ;
 +------------------+-----------------------------+
@@ -416,11 +418,11 @@ Note: User assignments will override these defaults. The user specified values a
 +-------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------+-------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                        ; Entity Name                   ; Library Name ;
 +-------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------+-------------------------------+--------------+
-; |DUT                                            ; 3 (0)       ; 3            ; 0          ; 5    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |DUT                                                       ; DUT                           ; work         ;
+; |DUT                                            ; 3 (0)       ; 3            ; 0          ; 6    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |DUT                                                       ; DUT                           ; work         ;
 ;    |sequence_generator_structural:add_instance| ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |DUT|sequence_generator_structural:add_instance            ; sequence_generator_structural ; work         ;
-;       |dff1:dff_1|                              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |DUT|sequence_generator_structural:add_instance|dff1:dff_1 ; dff1                          ; work         ;
-;       |dff2:dff_0|                              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |DUT|sequence_generator_structural:add_instance|dff2:dff_0 ; dff2                          ; work         ;
+;       |dff2:dff_1|                              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |DUT|sequence_generator_structural:add_instance|dff2:dff_1 ; dff2                          ; work         ;
 ;       |dff2:dff_2|                              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |DUT|sequence_generator_structural:add_instance|dff2:dff_2 ; dff2                          ; work         ;
+;       |dff2:dff_3|                              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |DUT|sequence_generator_structural:add_instance|dff2:dff_3 ; dff2                          ; work         ;
 +-------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------+-------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -433,6 +435,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; output_vector[0] ; Output   ; --            ;
 ; output_vector[1] ; Output   ; --            ;
 ; output_vector[2] ; Output   ; --            ;
+; output_vector[3] ; Output   ; --            ;
 ; input_vector[0]  ; Input    ; (0)           ;
 ; input_vector[1]  ; Input    ; (0)           ;
 +------------------+----------+---------------+
@@ -469,7 +472,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LAB clocks            ; 2 / 72 ( 3 % )      ;
 ; LUT chains            ; 0 / 1,143 ( 0 % )   ;
 ; Local interconnects   ; 3 / 3,938 ( < 1 % ) ;
-; R4s                   ; 4 / 2,832 ( < 1 % ) ;
+; R4s                   ; 3 / 2,832 ( < 1 % ) ;
 +-----------------------+---------------------+
 
 
@@ -566,7 +569,7 @@ Info (176444): Device migration not selected. If you intend to use device migrat
     Info (176445): Device 5M570ZT144C5 is compatible
     Info (176445): Device 5M570ZT144I5 is compatible
     Info (176445): Device 5M1270ZT144I5 is compatible
-Critical Warning (169085): No exact pin location assignment(s) for 5 pins of 5 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Critical Warning (169085): No exact pin location assignment(s) for 6 pins of 6 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'DUT.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332128): Timing requirements not specified -- optimizing circuit to achieve the following default global requirements
@@ -576,15 +579,15 @@ Info (332111): Found 1 clocks
     Info (332111): ======== ============
     Info (332111):    1.000 input_vector[0]
 Info (186079): Completed User Assigned Global Signals Promotion Operation
-Info (186215): Automatically promoted signal "input_vector[0]" to use Global clock in PIN 18 File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/DUT.vhdl Line: 8
-Info (186215): Automatically promoted signal "input_vector[1]" to use Global clock in PIN 20 File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/DUT.vhdl Line: 8
+Info (186215): Automatically promoted signal "input_vector[0]" to use Global clock in PIN 18 File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl Line: 8
+Info (186215): Automatically promoted signal "input_vector[1]" to use Global clock in PIN 20 File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl Line: 8
 Info (186079): Completed Auto Global Promotion Operation
 Info (176234): Starting register packing
 Info (186468): Started processing fast register assignments
 Info (186469): Finished processing fast register assignments
 Info (176235): Finished register packing
 Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 3 (unused VREF, 3.3V VCCIO, 0 input, 3 output, 0 bidirectional)
+    Info (176211): Number of I/O pins in group: 4 (unused VREF, 3.3V VCCIO, 0 input, 4 output, 0 bidirectional)
         Info (176212): I/O standards used: 3.3-V LVTTL.
 Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
@@ -608,10 +611,10 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/output_files/DUT.fit.smsg
+Info (144001): Generated suppressed messages file E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/output_files/DUT.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5524 megabytes
-    Info: Processing ended: Tue Sep 28 17:15:31 2021
+    Info: Peak virtual memory: 5528 megabytes
+    Info: Processing ended: Fri Oct 01 18:33:02 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -619,6 +622,6 @@ Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/output_files/DUT.fit.smsg.
+The suppressed messages can be found in E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/output_files/DUT.fit.smsg.
 
 

@@ -125,9 +125,9 @@ GND*                         : 57        :        :                   :         
 GND*                         : 58        :        :                   :         : 4         :                
 GND*                         : 59        :        :                   :         : 4         :                
 GND*                         : 60        :        :                   :         : 4         :                
-output_vector[2]             : 61        : output : 3.3-V LVTTL       :         : 4         : N              
-output_vector[0]             : 62        : output : 3.3-V LVTTL       :         : 4         : N              
-output_vector[1]             : 63        : output : 3.3-V LVTTL       :         : 4         : N              
+output_vector[1]             : 61        : output : 3.3-V LVTTL       :         : 4         : N              
+output_vector[2]             : 62        : output : 3.3-V LVTTL       :         : 4         : N              
+output_vector[3]             : 63        : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : 64        : power  :                   : 3.3V    : 4         :                
 GNDIO                        : 65        : gnd    :                   :         :           :                
 GND*                         : 66        :        :                   :         : 4         :                
@@ -203,7 +203,7 @@ GNDIO                        : 135       : gnd    :                   :         
 VCCIO2                       : 136       : power  :                   : 3.3V    : 2         :                
 GND*                         : 137       :        :                   :         : 2         :                
 GND*                         : 138       :        :                   :         : 2         :                
-GND*                         : 139       :        :                   :         : 2         :                
+output_vector[0]             : 139       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 140       :        :                   :         : 2         :                
 GND*                         : 141       :        :                   :         : 2         :                
 GND*                         : 142       :        :                   :         : 2         :                

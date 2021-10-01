@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DUT
-Tue Sep 28 17:15:29 2021
+Fri Oct 01 18:33:00 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,9 +13,10 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Inverted Register Statistics
- 10. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "sequence_generator_structural:add_instance|dff2:dff_0"
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -42,13 +43,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Sep 28 17:15:29 2021       ;
+; Analysis & Synthesis Status ; Successful - Fri Oct 01 18:33:00 2021       ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; DUT                                         ;
 ; Top-level Entity Name       ; DUT                                         ;
 ; Family                      ; MAX V                                       ;
 ; Total logic elements        ; 3                                           ;
-; Total pins                  ; 5                                           ;
+; Total pins                  ; 6                                           ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -141,15 +142,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                 ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                          ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
-; Gates.vhdl                       ; yes             ; User VHDL File  ; E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl    ;         ;
-; DUT.vhdl                         ; yes             ; User VHDL File  ; E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/DUT.vhdl      ;         ;
-; Sequence.vhdl                    ; yes             ; User VHDL File  ; E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Sequence.vhdl ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; Gates.vhdl                       ; yes             ; User VHDL File  ; E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl    ;         ;
+; DUT.vhdl                         ; yes             ; User VHDL File  ; E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl      ;         ;
+; Sequence.vhdl                    ; yes             ; User VHDL File  ; E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------------------------------+
@@ -164,9 +165,9 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                         ;
 ; Logic element usage by number of LUT inputs ;                                                         ;
 ;     -- 4 input functions                    ; 0                                                       ;
-;     -- 3 input functions                    ; 3                                                       ;
-;     -- 2 input functions                    ; 0                                                       ;
-;     -- 1 input functions                    ; 0                                                       ;
+;     -- 3 input functions                    ; 1                                                       ;
+;     -- 2 input functions                    ; 1                                                       ;
+;     -- 1 input functions                    ; 1                                                       ;
 ;     -- 0 input functions                    ; 0                                                       ;
 ;                                             ;                                                         ;
 ; Logic elements by mode                      ;                                                         ;
@@ -178,11 +179,11 @@ https://fpgasoftware.intel.com/eula.
 ;     -- asynchronous clear/load mode         ; 3                                                       ;
 ;                                             ;                                                         ;
 ; Total registers                             ; 3                                                       ;
-; I/O pins                                    ; 5                                                       ;
-; Maximum fan-out node                        ; sequence_generator_structural:add_instance|dff2:dff_2|Q ;
+; I/O pins                                    ; 6                                                       ;
+; Maximum fan-out node                        ; sequence_generator_structural:add_instance|dff2:dff_1|Q ;
 ; Maximum fan-out                             ; 4                                                       ;
-; Total fan-out                               ; 18                                                      ;
-; Average fan-out                             ; 2.25                                                    ;
+; Total fan-out                               ; 15                                                      ;
+; Average fan-out                             ; 1.67                                                    ;
 +---------------------------------------------+---------------------------------------------------------+
 
 
@@ -191,13 +192,23 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------+-------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                        ; Entity Name                   ; Library Name ;
 +-------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------+-------------------------------+--------------+
-; |DUT                                            ; 3 (0)       ; 3            ; 0          ; 5    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |DUT                                                       ; DUT                           ; work         ;
+; |DUT                                            ; 3 (0)       ; 3            ; 0          ; 6    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |DUT                                                       ; DUT                           ; work         ;
 ;    |sequence_generator_structural:add_instance| ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |DUT|sequence_generator_structural:add_instance            ; sequence_generator_structural ; work         ;
-;       |dff1:dff_1|                              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |DUT|sequence_generator_structural:add_instance|dff1:dff_1 ; dff1                          ; work         ;
-;       |dff2:dff_0|                              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |DUT|sequence_generator_structural:add_instance|dff2:dff_0 ; dff2                          ; work         ;
+;       |dff2:dff_1|                              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |DUT|sequence_generator_structural:add_instance|dff2:dff_1 ; dff2                          ; work         ;
 ;       |dff2:dff_2|                              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |DUT|sequence_generator_structural:add_instance|dff2:dff_2 ; dff2                          ; work         ;
+;       |dff2:dff_3|                              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |DUT|sequence_generator_structural:add_instance|dff2:dff_3 ; dff2                          ; work         ;
 +-------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------+-------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                               ;
++---------------------------------------------------------+----------------------------------------+
+; Register name                                           ; Reason for Removal                     ;
++---------------------------------------------------------+----------------------------------------+
+; sequence_generator_structural:add_instance|dff2:dff_0|Q ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1                   ;                                        ;
++---------------------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -215,14 +226,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------+
-; Inverted Register Statistics                                      ;
-+---------------------------------------------------------+---------+
-; Inverted Register                                       ; Fan out ;
-+---------------------------------------------------------+---------+
-; sequence_generator_structural:add_instance|dff1:dff_1|Q ; 4       ;
-; Total number of inverted registers = 1                  ;         ;
-+---------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sequence_generator_structural:add_instance|dff2:dff_0" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; d    ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
 
 
 +-------------------------------+
@@ -231,66 +241,64 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Sep 28 17:15:21 2021
+    Info: Processing started: Fri Oct 01 18:32:52 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Structural -c DUT
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file toplevel.vhdl
-    Info (12022): Found design unit 1: TopLevel-Struct File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/TopLevel.vhdl Line: 13
-    Info (12023): Found entity 1: TopLevel File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/TopLevel.vhdl Line: 5
+    Info (12022): Found design unit 1: TopLevel-Struct File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/TopLevel.vhdl Line: 13
+    Info (12023): Found entity 1: TopLevel File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/TopLevel.vhdl Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file v_jtag/synthesis/v_jtag.vhd
-    Info (12022): Found design unit 1: v_jtag-rtl File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/v_jtag/synthesis/v_jtag.vhd Line: 44
-    Info (12023): Found entity 1: v_jtag File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/v_jtag/synthesis/v_jtag.vhd Line: 9
+    Info (12022): Found design unit 1: v_jtag-rtl File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/v_jtag/synthesis/v_jtag.vhd Line: 44
+    Info (12023): Found entity 1: v_jtag File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/v_jtag/synthesis/v_jtag.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file v_jtag/synthesis/v_jtag.vhd
-    Info (12022): Found design unit 1: v_jtag-rtl File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/v_jtag/synthesis/v_jtag.vhd Line: 44
-    Info (12023): Found entity 1: v_jtag File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/v_jtag/synthesis/v_jtag.vhd Line: 9
+    Info (12022): Found design unit 1: v_jtag-rtl File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/v_jtag/synthesis/v_jtag.vhd Line: 44
+    Info (12023): Found entity 1: v_jtag File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/v_jtag/synthesis/v_jtag.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file testbench.vhdl
-    Info (12022): Found design unit 1: Testbench-Behave File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Testbench.vhdl Line: 9
-    Info (12023): Found entity 1: Testbench File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Testbench.vhdl Line: 7
-Warning (12090): Entity "dff2" obtained from "Gates.vhdl" instead of from Quartus Prime megafunction library File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 138
-Info (12021): Found 21 design units, including 10 entities, in source file gates.vhdl
-    Info (12022): Found design unit 1: Gates File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 3
-    Info (12022): Found design unit 2: INVERTER-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 51
-    Info (12022): Found design unit 3: AND_2-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 63
-    Info (12022): Found design unit 4: NAND_2-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 74
-    Info (12022): Found design unit 5: OR_2-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 85
-    Info (12022): Found design unit 6: NOR_2-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 96
-    Info (12022): Found design unit 7: XOR_2-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 108
-    Info (12022): Found design unit 8: XNOR_2-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 119
-    Info (12022): Found design unit 9: HALF_ADDER-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 130
-    Info (12022): Found design unit 10: dff2-behav File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 140
-    Info (12022): Found design unit 11: dff1-behav File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 157
-    Info (12023): Found entity 1: INVERTER File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 47
-    Info (12023): Found entity 2: AND_2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 59
-    Info (12023): Found entity 3: NAND_2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 70
-    Info (12023): Found entity 4: OR_2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 81
-    Info (12023): Found entity 5: NOR_2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 92
-    Info (12023): Found entity 6: XOR_2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 104
-    Info (12023): Found entity 7: XNOR_2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 115
-    Info (12023): Found entity 8: HALF_ADDER File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 126
-    Info (12023): Found entity 9: dff2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 138
-    Info (12023): Found entity 10: dff1 File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 155
+    Info (12022): Found design unit 1: Testbench-Behave File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl Line: 9
+    Info (12023): Found entity 1: Testbench File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl Line: 7
+Warning (12090): Entity "dff2" obtained from "Gates.vhdl" instead of from Quartus Prime megafunction library File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 135
+Info (12021): Found 19 design units, including 9 entities, in source file gates.vhdl
+    Info (12022): Found design unit 1: Gates File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 3
+    Info (12022): Found design unit 2: INVERTER-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 48
+    Info (12022): Found design unit 3: AND_2-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 60
+    Info (12022): Found design unit 4: NAND_2-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 71
+    Info (12022): Found design unit 5: OR_2-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 82
+    Info (12022): Found design unit 6: NOR_2-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 93
+    Info (12022): Found design unit 7: XOR_2-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 105
+    Info (12022): Found design unit 8: XNOR_2-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 116
+    Info (12022): Found design unit 9: HALF_ADDER-Equations File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 127
+    Info (12022): Found design unit 10: dff2-behav File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 137
+    Info (12023): Found entity 1: INVERTER File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 44
+    Info (12023): Found entity 2: AND_2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 56
+    Info (12023): Found entity 3: NAND_2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 67
+    Info (12023): Found entity 4: OR_2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 78
+    Info (12023): Found entity 5: NOR_2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 89
+    Info (12023): Found entity 6: XOR_2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 101
+    Info (12023): Found entity 7: XNOR_2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 112
+    Info (12023): Found entity 8: HALF_ADDER File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 123
+    Info (12023): Found entity 9: dff2 File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl Line: 135
 Info (12021): Found 2 design units, including 1 entities, in source file dut.vhdl
-    Info (12022): Found design unit 1: DUT-DutWrap File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/DUT.vhdl Line: 12
-    Info (12023): Found entity 1: DUT File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/DUT.vhdl Line: 7
+    Info (12022): Found design unit 1: DUT-DutWrap File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl Line: 12
+    Info (12023): Found entity 1: DUT File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file sequence.vhdl
-    Info (12022): Found design unit 1: sequence_generator_structural-struct File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Sequence.vhdl Line: 11
-    Info (12023): Found entity 1: sequence_generator_structural File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Sequence.vhdl Line: 6
+    Info (12022): Found design unit 1: sequence_generator_structural-struct File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl Line: 11
+    Info (12023): Found entity 1: sequence_generator_structural File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl Line: 6
 Info (12127): Elaborating entity "DUT" for the top level hierarchy
-Info (12128): Elaborating entity "sequence_generator_structural" for hierarchy "sequence_generator_structural:add_instance" File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/DUT.vhdl Line: 21
-Info (12128): Elaborating entity "dff2" for hierarchy "sequence_generator_structural:add_instance|dff2:dff_0" File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Sequence.vhdl Line: 26
-Info (12128): Elaborating entity "dff1" for hierarchy "sequence_generator_structural:add_instance|dff1:dff_1" File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Sequence.vhdl Line: 29
-Info (18000): Registers with preset signals will power-up high File: E:/Academics/IIT Bombay/Repositories/VHDL/Sequence Generator/Structural/Gates.vhdl Line: 155
-Info (21057): Implemented 8 device resources after synthesis - the final resource count might be different
+Info (12128): Elaborating entity "sequence_generator_structural" for hierarchy "sequence_generator_structural:add_instance" File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl Line: 21
+Info (12128): Elaborating entity "dff2" for hierarchy "sequence_generator_structural:add_instance|dff2:dff_3" File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl Line: 30
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "output_vector[0]" is stuck at GND File: E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl Line: 9
+Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 3 output pins
+    Info (21059): Implemented 4 output pins
     Info (21061): Implemented 3 logic cells
 Warning (20013): Ignored 15 assignments for entity "sld_virtual_jtag" -- entity does not exist in design
 Warning (20013): Ignored 16 assignments for entity "v_jtag" -- entity does not exist in design
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4751 megabytes
-    Info: Processing ended: Tue Sep 28 17:15:29 2021
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4760 megabytes
+    Info: Processing ended: Fri Oct 01 18:33:00 2021
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Total CPU time (on all processors): 00:00:16
 
 

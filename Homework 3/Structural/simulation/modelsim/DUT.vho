@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
--- DATE "09/28/2021 17:15:35"
+-- DATE "10/01/2021 18:33:08"
 
 -- 
 -- Device: Altera 5M1270ZT144C5 Package TQFP144
@@ -35,7 +35,7 @@ USE MAXV.MAXV_COMPONENTS.ALL;
 ENTITY 	DUT IS
     PORT (
 	input_vector : IN std_logic_vector(1 DOWNTO 0);
-	output_vector : OUT std_logic_vector(2 DOWNTO 0)
+	output_vector : BUFFER std_logic_vector(3 DOWNTO 0)
 	);
 END DUT;
 
@@ -53,12 +53,11 @@ SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
 SIGNAL ww_input_vector : std_logic_vector(1 DOWNTO 0);
-SIGNAL ww_output_vector : std_logic_vector(2 DOWNTO 0);
+SIGNAL ww_output_vector : std_logic_vector(3 DOWNTO 0);
 SIGNAL \add_instance|dff_1|Q~regout\ : std_logic;
-SIGNAL \add_instance|dff_0|Q~regout\ : std_logic;
 SIGNAL \add_instance|dff_2|Q~regout\ : std_logic;
+SIGNAL \add_instance|dff_3|Q~regout\ : std_logic;
 SIGNAL \input_vector~combout\ : std_logic_vector(1 DOWNTO 0);
-SIGNAL \add_instance|dff_1|ALT_INV_Q~regout\ : std_logic;
 
 BEGIN
 
@@ -67,7 +66,6 @@ output_vector <= ww_output_vector;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\add_instance|dff_1|ALT_INV_Q~regout\ <= NOT \add_instance|dff_1|Q~regout\;
 
 -- Location: PIN_18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \input_vector[0]~I\ : maxv_io
@@ -91,15 +89,14 @@ PORT MAP (
 	padio => ww_input_vector(1),
 	combout => \input_vector~combout\(1));
 
--- Location: LC_X12_Y3_N8
+-- Location: LC_X12_Y3_N4
 \add_instance|dff_1|Q\ : maxv_lcell
 -- Equation(s):
--- \add_instance|dff_1|Q~regout\ = DFFEAS(((\add_instance|dff_0|Q~regout\ & (\add_instance|dff_2|Q~regout\)) # (!\add_instance|dff_0|Q~regout\ & ((!\add_instance|dff_1|Q~regout\)))), GLOBAL(\input_vector~combout\(0)), !GLOBAL(\input_vector~combout\(1)), , , 
--- , , , )
+-- \add_instance|dff_1|Q~regout\ = DFFEAS((((!\add_instance|dff_1|Q~regout\))), GLOBAL(\input_vector~combout\(0)), !GLOBAL(\input_vector~combout\(1)), , , , , , )
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "c0cf",
+	lut_mask => "0f0f",
 	operation_mode => "normal",
 	output_mode => "reg_only",
 	register_cascade_mode => "off",
@@ -108,47 +105,20 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \input_vector~combout\(0),
-	datab => \add_instance|dff_2|Q~regout\,
-	datac => \add_instance|dff_0|Q~regout\,
-	datad => \add_instance|dff_1|Q~regout\,
+	datac => \add_instance|dff_1|Q~regout\,
 	aclr => \input_vector~combout\(1),
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \add_instance|dff_1|Q~regout\);
 
--- Location: LC_X12_Y3_N7
-\add_instance|dff_0|Q\ : maxv_lcell
--- Equation(s):
--- \add_instance|dff_0|Q~regout\ = DFFEAS((\add_instance|dff_2|Q~regout\ $ (\add_instance|dff_0|Q~regout\ $ (\add_instance|dff_1|Q~regout\))), GLOBAL(\input_vector~combout\(0)), !GLOBAL(\input_vector~combout\(1)), , , , , , )
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "c33c",
-	operation_mode => "normal",
-	output_mode => "reg_only",
-	register_cascade_mode => "off",
-	sum_lutc_input => "datac",
-	synch_mode => "off")
--- pragma translate_on
-PORT MAP (
-	clk => \input_vector~combout\(0),
-	datab => \add_instance|dff_2|Q~regout\,
-	datac => \add_instance|dff_0|Q~regout\,
-	datad => \add_instance|dff_1|Q~regout\,
-	aclr => \input_vector~combout\(1),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \add_instance|dff_0|Q~regout\);
-
--- Location: LC_X12_Y3_N9
+-- Location: LC_X12_Y3_N3
 \add_instance|dff_2|Q\ : maxv_lcell
 -- Equation(s):
--- \add_instance|dff_2|Q~regout\ = DFFEAS(((\add_instance|dff_0|Q~regout\ & ((!\add_instance|dff_1|Q~regout\))) # (!\add_instance|dff_0|Q~regout\ & (\add_instance|dff_2|Q~regout\))), GLOBAL(\input_vector~combout\(0)), !GLOBAL(\input_vector~combout\(1)), , , 
--- , , , )
+-- \add_instance|dff_2|Q~regout\ = DFFEAS(((\add_instance|dff_1|Q~regout\ $ (\add_instance|dff_2|Q~regout\))), GLOBAL(\input_vector~combout\(0)), !GLOBAL(\input_vector~combout\(1)), , , , , , )
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0cfc",
+	lut_mask => "0ff0",
 	operation_mode => "normal",
 	output_mode => "reg_only",
 	register_cascade_mode => "off",
@@ -157,16 +127,61 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \input_vector~combout\(0),
-	datab => \add_instance|dff_2|Q~regout\,
-	datac => \add_instance|dff_0|Q~regout\,
-	datad => \add_instance|dff_1|Q~regout\,
+	datac => \add_instance|dff_1|Q~regout\,
+	datad => \add_instance|dff_2|Q~regout\,
 	aclr => \input_vector~combout\(1),
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \add_instance|dff_2|Q~regout\);
 
--- Location: PIN_62,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- Location: LC_X12_Y3_N7
+\add_instance|dff_3|Q\ : maxv_lcell
+-- Equation(s):
+-- \add_instance|dff_3|Q~regout\ = DFFEAS((\add_instance|dff_3|Q~regout\ $ (((\add_instance|dff_1|Q~regout\ & \add_instance|dff_2|Q~regout\)))), GLOBAL(\input_vector~combout\(0)), !GLOBAL(\input_vector~combout\(1)), , , , , , )
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "3ccc",
+	operation_mode => "normal",
+	output_mode => "reg_only",
+	register_cascade_mode => "off",
+	sum_lutc_input => "datac",
+	synch_mode => "off")
+-- pragma translate_on
+PORT MAP (
+	clk => \input_vector~combout\(0),
+	datab => \add_instance|dff_3|Q~regout\,
+	datac => \add_instance|dff_1|Q~regout\,
+	datad => \add_instance|dff_2|Q~regout\,
+	aclr => \input_vector~combout\(1),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \add_instance|dff_3|Q~regout\);
+
+-- Location: PIN_139,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 \output_vector[0]~I\ : maxv_io
+-- pragma translate_off
+GENERIC MAP (
+	operation_mode => "output")
+-- pragma translate_on
+PORT MAP (
+	datain => GND,
+	oe => VCC,
+	padio => ww_output_vector(0));
+
+-- Location: PIN_61,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+\output_vector[1]~I\ : maxv_io
+-- pragma translate_off
+GENERIC MAP (
+	operation_mode => "output")
+-- pragma translate_on
+PORT MAP (
+	datain => \add_instance|dff_1|Q~regout\,
+	oe => VCC,
+	padio => ww_output_vector(1));
+
+-- Location: PIN_62,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+\output_vector[2]~I\ : maxv_io
 -- pragma translate_off
 GENERIC MAP (
 	operation_mode => "output")
@@ -174,29 +189,18 @@ GENERIC MAP (
 PORT MAP (
 	datain => \add_instance|dff_2|Q~regout\,
 	oe => VCC,
-	padio => ww_output_vector(0));
+	padio => ww_output_vector(2));
 
 -- Location: PIN_63,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-\output_vector[1]~I\ : maxv_io
+\output_vector[3]~I\ : maxv_io
 -- pragma translate_off
 GENERIC MAP (
 	operation_mode => "output")
 -- pragma translate_on
 PORT MAP (
-	datain => \add_instance|dff_1|ALT_INV_Q~regout\,
+	datain => \add_instance|dff_3|Q~regout\,
 	oe => VCC,
-	padio => ww_output_vector(1));
-
--- Location: PIN_61,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-\output_vector[2]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "output")
--- pragma translate_on
-PORT MAP (
-	datain => \add_instance|dff_0|Q~regout\,
-	oe => VCC,
-	padio => ww_output_vector(2));
+	padio => ww_output_vector(3));
 END structure;
 
 
