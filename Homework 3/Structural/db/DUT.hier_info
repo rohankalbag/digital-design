@@ -1,10 +1,10 @@
 |DUT
 input_vector[0] => sequence_generator_structural:add_instance.clock
 input_vector[1] => sequence_generator_structural:add_instance.reset
-output_vector[0] << sequence_generator_structural:add_instance.y[0]
-output_vector[1] << sequence_generator_structural:add_instance.y[1]
-output_vector[2] << sequence_generator_structural:add_instance.y[2]
-output_vector[3] << sequence_generator_structural:add_instance.y[3]
+output_vector[0] <= sequence_generator_structural:add_instance.y[0]
+output_vector[1] <= sequence_generator_structural:add_instance.y[1]
+output_vector[2] <= sequence_generator_structural:add_instance.y[2]
+output_vector[3] <= sequence_generator_structural:add_instance.y[3]
 
 
 |DUT|sequence_generator_structural:add_instance

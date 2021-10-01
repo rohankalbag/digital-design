@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DUT
-Wed Sep 29 14:37:11 2021
+Fri Oct 01 20:33:15 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Sep 29 14:37:11 2021       ;
+; Analysis & Synthesis Status ; Successful - Fri Oct 01 20:33:15 2021       ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; DUT                                         ;
 ; Top-level Entity Name       ; DUT                                         ;
@@ -227,7 +227,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Sep 29 14:37:02 2021
+    Info: Processing started: Fri Oct 01 20:33:08 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Behav -c DUT
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -260,9 +260,9 @@ Info (21057): Implemented 9 device resources after synthesis - the final resourc
 Warning (20013): Ignored 15 assignments for entity "sld_virtual_jtag" -- entity does not exist in design
 Warning (20013): Ignored 16 assignments for entity "v_jtag" -- entity does not exist in design
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4752 megabytes
-    Info: Processing ended: Wed Sep 29 14:37:11 2021
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 4760 megabytes
+    Info: Processing ended: Fri Oct 01 20:33:15 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:16
 
 
