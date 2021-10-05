@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dE:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Behav/simulation/modelsim
 Edut
-Z1 w1632906438
+Z1 w1633100601
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx4 maxv 14 maxv_atom_pack 0 22 oUgm>1dF?35MRi?SjileG1
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -27,9 +27,9 @@ Vc4VdQg?me3mKD9i=1@WFo1
 !s100 e0AV4hIm3fENGPMc>2N;l2
 Z10 OV;C;2020.1;71
 31
-Z11 !s110 1633095100
+Z11 !s110 1633425474
 !i10b 1
-Z12 !s108 1633095100.000000
+Z12 !s108 1633425474.000000
 Z13 !s90 -reportprogress|300|-93|-work|work|DUT.vho|
 Z14 !s107 DUT.vho|
 !i113 1
@@ -72,10 +72,10 @@ V]iKK_Z9L:G9B:i8c]3eFH0
 !s100 bWf8kl8zb90X@P1m>V^K20
 R10
 31
-R11
+Z20 !s110 1633425475
 !i10b 1
 R12
-Z20 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Behav/Testbench.vhdl|
+Z21 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Behav/Testbench.vhdl|
 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Behav/Testbench.vhdl|
 !i113 1
 R15
@@ -91,11 +91,11 @@ VolF3lMRhQ]gRWA<VbDHVk3
 !s100 LH6KFbmS4bY[IH]L3IN8m0
 R10
 31
-R11
+R20
 !i10b 1
 R12
-R20
-Z21 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Behav/Testbench.vhdl|
+R21
+Z22 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Behav/Testbench.vhdl|
 !i113 1
 R15
 R16

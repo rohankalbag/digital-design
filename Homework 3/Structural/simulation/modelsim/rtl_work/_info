@@ -23,9 +23,9 @@ V^<@S]C[a0o`<5z]A6^QEI3
 !s100 >c97M_;fFCB48AL2f[iKC2
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1633097066
+Z7 !s110 1633425763
 !i10b 1
-Z8 !s108 1633097066.000000
+Z8 !s108 1633425763.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl|
 Z10 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Gates.vhdl|
 !i113 1
@@ -105,11 +105,11 @@ Vf[i;Aa?kTDS6GD>YBjnWJ0
 !s100 hB1n]XCSP2VmFcg2i[R4e3
 R6
 31
-R7
+Z16 !s110 1633425764
 !i10b 1
-R8
-Z16 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl|
-Z17 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl|
+Z17 !s108 1633425764.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl|
+Z19 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/DUT.vhdl|
 !i113 1
 R11
 R12
@@ -124,11 +124,11 @@ Vd5i6U7g=Y=<=cX327=df>0
 !s100 ET?TBgYz1E`zW00WXWFUT1
 R6
 31
-R7
-!i10b 1
-R8
 R16
+!i10b 1
 R17
+R18
+R19
 !i113 1
 R11
 R12
@@ -360,30 +360,30 @@ R10
 R11
 R12
 Esequence_generator_structural
-Z18 w1633093356
-Z19 DPx4 work 5 gates 0 22 [cXl;;Ph51]84C<jL4j373
+Z20 w1633093356
+Z21 DPx4 work 5 gates 0 22 [cXl;;Ph51]84C<jL4j373
 R2
 R3
 !i122 2
 R0
-Z20 8E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl
-Z21 FE:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl
+Z22 8E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl
+Z23 FE:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl
 l0
 L6 1
 VL_5DTIdRW_@KlYI8hT[R=2
 !s100 >fDBa_QUBKXdTPACRoVb43
 R6
 31
-R7
+R16
 !i10b 1
-R8
-Z22 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl|
-Z23 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl|
+R17
+Z24 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl|
+Z25 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Sequence.vhdl|
 !i113 1
 R11
 R12
 Astruct
-R19
+R21
 R2
 R3
 DEx4 work 29 sequence_generator_structural 0 22 L_5DTIdRW_@KlYI8hT[R=2
@@ -394,32 +394,32 @@ Vd^mO0OD5M[;=oLD0zhMUz3
 !s100 YR>BEkIBXie?f_f8TFUNH1
 R6
 31
-R7
+R16
 !i10b 1
-R8
-R22
-R23
+R17
+R24
+R25
 !i113 1
 R11
 R12
 Etestbench
-Z24 w1632914503
+Z26 w1632914503
 R3
 R2
 !i122 3
 R0
-Z25 8E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl
-Z26 FE:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl
+Z27 8E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl
+Z28 FE:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl
 l0
 L7 1
 V]iKK_Z9L:G9B:i8c]3eFH0
 !s100 bWf8kl8zb90X@P1m>V^K20
 R6
 31
-R7
+R16
 !i10b 1
-R8
-Z27 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl|
+R17
+Z29 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl|
 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl|
 !i113 1
 R11
@@ -435,11 +435,11 @@ VolF3lMRhQ]gRWA<VbDHVk3
 !s100 LH6KFbmS4bY[IH]L3IN8m0
 R6
 31
-R7
+R16
 !i10b 1
-R8
-R27
-Z28 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl|
+R17
+R29
+Z30 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Homework 3/Structural/Testbench.vhdl|
 !i113 1
 R11
 R12
