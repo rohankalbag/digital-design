@@ -1,0 +1,20 @@
+|DUT
+input_vector[0] => Serial_comparator:add_instance.clock
+input_vector[1] => Serial_comparator:add_instance.b
+input_vector[2] => Serial_comparator:add_instance.a
+input_vector[3] => Serial_comparator:add_instance.reset
+output_vector[0] <= Serial_comparator:add_instance.l
+output_vector[1] <= Serial_comparator:add_instance.g
+
+
+|DUT|Serial_comparator:add_instance
+reset => y_present~3.DATAIN
+a => process_0.IN0
+a => process_0.IN0
+b => process_0.IN1
+b => process_0.IN1
+clock => y_present~1.DATAIN
+g <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+l <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

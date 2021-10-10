@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/simulation/modelsim
+Edut
+Z1 w1633847248
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8E:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/DUT.vhdl
+Z5 FE:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/DUT.vhdl
+l0
+L7 1
+V>HoT;B@GKeYKHQL^c4NVW1
+!s100 zEmkCW@chgN^O:lU3`]^91
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1633848162
+!i10b 1
+Z8 !s108 1633848162.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/DUT.vhdl|
+Z10 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/DUT.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 >HoT;B@GKeYKHQL^c4NVW1
+!i122 1
+l18
+L12 18
+Vlj3NmU5BQVFh5OFEhI_YA3
+!s100 <[LF]1_SooE7n@:D?d1783
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eserial_comparator
+Z13 w1633847224
+R2
+R3
+!i122 0
+R0
+Z14 8E:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/SerialComparator.vhdl
+Z15 FE:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/SerialComparator.vhdl
+l0
+L4 1
+VI4Z_P0XH>e730B93OFeQW0
+!s100 14NP[??>miT?TJPUEn^Rf0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/SerialComparator.vhdl|
+Z17 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/SerialComparator.vhdl|
+!i113 1
+R11
+R12
+Abhv
+R2
+R3
+DEx4 work 17 serial_comparator 0 22 I4Z_P0XH>e730B93OFeQW0
+!i122 0
+l12
+L8 68
+VTU6=^nBnRn7WZL]fD8Z@13
+!s100 l49Hz0=81?QbD9i[9i;3N3
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Etestbench
+Z18 w1633847258
+R3
+R2
+!i122 2
+R0
+Z19 8E:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/Testbench.vhdl
+Z20 FE:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/Testbench.vhdl|
+!s107 E:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 2
+l69
+L9 132
+VgR<]BLdDO33=<]i<G8liM3
+!s100 lkD0cX6a[zNb5@c@5Ji3]0
+R6
+31
+R7
+!i10b 1
+R8
+R21
+Z22 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Serial Comparator/Testbench.vhdl|
+!i113 1
+R11
+R12
