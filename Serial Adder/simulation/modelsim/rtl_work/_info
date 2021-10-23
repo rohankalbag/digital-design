@@ -23,9 +23,9 @@ V>1T<VOMo<Ne`;k1om:2Id2
 !s100 ;OhjzM9?Cg]ggKecYYO>m3
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1633845122
+Z7 !s110 1635014318
 !i10b 1
-Z8 !s108 1633845122.000000
+Z8 !s108 1635014318.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/DUT.vhdl|
 Z10 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/DUT.vhdl|
 !i113 1
@@ -51,7 +51,7 @@ R10
 R11
 R12
 Eserial_adder
-Z13 w1633845095
+Z13 w1633845143
 Z14 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R2
 R3
@@ -67,9 +67,9 @@ R6
 31
 R7
 !i10b 1
-R8
-Z17 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/SerialAdder.vhdl|
-Z18 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/SerialAdder.vhdl|
+Z17 !s108 1635014317.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/SerialAdder.vhdl|
+Z19 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/SerialAdder.vhdl|
 !i113 1
 R11
 R12
@@ -80,37 +80,37 @@ R3
 DEx4 work 12 serial_adder 0 22 XG=8D?ozCzdPQ7SCH[_`?0
 !i122 0
 l15
-L9 46
-VYI5V65@GmV76glg2=F9Zg0
-!s100 M7AU[XODCcW:_L2ANI5UU3
+L9 47
+VTB3<Gabd@2:]fF]7@:]R51
+!s100 Xm_6KHQgQ?To>kzDb9Ina1
 R6
 31
 R7
 !i10b 1
-R8
 R17
 R18
+R19
 !i113 1
 R11
 R12
 Etestbench
-Z19 w1633844670
+Z20 w1633844670
 R3
 R2
 !i122 2
 R0
-Z20 8E:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/Testbench.vhdl
-Z21 FE:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/Testbench.vhdl
+Z21 8E:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/Testbench.vhdl
+Z22 FE:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/Testbench.vhdl
 l0
 L7 1
 V]iKK_Z9L:G9B:i8c]3eFH0
 !s100 bWf8kl8zb90X@P1m>V^K20
 R6
 31
-Z22 !s110 1633845123
+R7
 !i10b 1
-Z23 !s108 1633845123.000000
-Z24 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/Testbench.vhdl|
+R8
+Z23 !s90 -reportprogress|300|-93|-work|work|E:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/Testbench.vhdl|
 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/Testbench.vhdl|
 !i113 1
 R11
@@ -126,11 +126,11 @@ V1=[izZPW?zeTR^^RBO4a<0
 !s100 hAj0<EMJ3czUn7I[`SLfm1
 R6
 31
-R22
+R7
 !i10b 1
+R8
 R23
-R24
-Z25 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/Testbench.vhdl|
+Z24 !s107 E:/Academics/IIT Bombay/Repositories/VHDL/Serial Adder/Testbench.vhdl|
 !i113 1
 R11
 R12
