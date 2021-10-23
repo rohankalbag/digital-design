@@ -1,0 +1,40 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity krypton is
+port(inp:in std_logic_vector(4 downto 0);
+        reset,clock:in std_logic;
+        outp: out std_logic);
+end krypton;
+
+architecture rch of krypton is
+
+---------------Define state type here-----------------------------
+type state is (rst,s1,      -- Fill the code here
+---------------Define signals of state type-----------------------
+signal y_present,y_next: state:=rst;
+
+begin
+clock_proc:process(clock,reset)
+begin
+    if(clock='1' and clock' event) then
+        if(reset='1') then
+            y_present<=     -- Fill the code here
+        else
+                            -- Fill the code here
+        end if;
+    end if;
+    
+end process;
+
+state_transition_proc:process(inp,y_present)
+begin
+    case y_present is
+        when init=>
+            if(unsigned(inp)=11) then   --k
+                y_next<=-- Fill the code here
+            else
+                        -- Fill the code here
+            end if;
+                        -- Fill the code here
