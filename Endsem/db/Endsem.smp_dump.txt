@@ -1,0 +1,7 @@
+
+State Machine - |timer_controller|fsm:f1|y_present
+Name y_present.timer3 y_present.timer2 y_present.timer1 y_present.rst 
+y_present.rst 0 0 0 0 
+y_present.timer1 0 0 1 1 
+y_present.timer2 0 1 0 1 
+y_present.timer3 1 0 0 1 

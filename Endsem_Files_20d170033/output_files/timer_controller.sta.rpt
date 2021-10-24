@@ -1,0 +1,545 @@
+Timing Analyzer report for timer_controller
+Sun Oct 24 12:50:14 2021
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'clock_50'
+ 12. Setup: 'clock_1'
+ 13. Hold: 'clock_50'
+ 14. Hold: 'clock_1'
+ 15. Setup Transfers
+ 16. Hold Transfers
+ 17. Report TCCS
+ 18. Report RSKM
+ 19. Unconstrained Paths Summary
+ 20. Clock Status Summary
+ 21. Unconstrained Input Ports
+ 22. Unconstrained Output Ports
+ 23. Unconstrained Input Ports
+ 24. Unconstrained Output Ports
+ 25. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; timer_controller                                    ;
+; Device Family         ; MAX V                                               ;
+; Device Name           ; 5M1270ZT144C5                                       ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                               ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; clock_1    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_1 }  ;
+; clock_50   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_50 } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Fmax Summary                                                                                              ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 116.13 MHz ; 116.13 MHz      ; clock_50   ;                                                               ;
+; 445.63 MHz ; 304.04 MHz      ; clock_1    ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-----------------------------------+
+; Setup Summary                     ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; clock_50 ; -7.611 ; -277.103      ;
+; clock_1  ; -1.244 ; -3.631        ;
++----------+--------+---------------+
+
+
++----------------------------------+
+; Hold Summary                     ;
++----------+-------+---------------+
+; Clock    ; Slack ; End Point TNS ;
++----------+-------+---------------+
+; clock_50 ; 1.358 ; 0.000         ;
+; clock_1  ; 1.639 ; 0.000         ;
++----------+-------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++-----------------------------------+
+; Minimum Pulse Width Summary       ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; clock_1  ; -2.289 ; -2.289        ;
+; clock_50 ; -2.289 ; -2.289        ;
++----------+--------+---------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clock_50'                                                                                                                ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node               ; To Node                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; -7.611 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|LED[1]     ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 8.278      ;
+; -7.607 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[0]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 8.274      ;
+; -7.470 ; timer_ckt:t1|timer3[5]  ; timer_ckt:t1|timer3[7]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 8.137      ;
+; -7.470 ; timer_ckt:t1|timer3[5]  ; timer_ckt:t1|timer3[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 8.137      ;
+; -7.385 ; timer_ckt:t1|timer3[6]  ; timer_ckt:t1|timer3[7]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 8.052      ;
+; -7.385 ; timer_ckt:t1|timer3[6]  ; timer_ckt:t1|timer3[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 8.052      ;
+; -7.344 ; timer_ckt:t1|timer3[8]  ; timer_ckt:t1|timer3[7]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 8.011      ;
+; -7.344 ; timer_ckt:t1|timer3[8]  ; timer_ckt:t1|timer3[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 8.011      ;
+; -7.176 ; timer_ckt:t1|timer2[2]  ; timer_ckt:t1|LED[1]     ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.843      ;
+; -7.172 ; timer_ckt:t1|timer2[2]  ; timer_ckt:t1|timer2[0]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.839      ;
+; -7.158 ; timer_ckt:t1|timer3[12] ; timer_ckt:t1|timer3[7]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.825      ;
+; -7.158 ; timer_ckt:t1|timer3[12] ; timer_ckt:t1|timer3[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.825      ;
+; -7.101 ; timer_ckt:t1|timer3[4]  ; timer_ckt:t1|timer3[7]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.768      ;
+; -7.101 ; timer_ckt:t1|timer3[4]  ; timer_ckt:t1|timer3[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.768      ;
+; -7.010 ; timer_ckt:t1|timer2[1]  ; timer_ckt:t1|LED[1]     ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.677      ;
+; -7.006 ; timer_ckt:t1|timer2[1]  ; timer_ckt:t1|timer2[0]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.673      ;
+; -7.000 ; timer_ckt:t1|timer3[7]  ; timer_ckt:t1|timer3[7]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.667      ;
+; -7.000 ; timer_ckt:t1|timer3[7]  ; timer_ckt:t1|timer3[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.667      ;
+; -6.963 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer3[7]  ; clock_1      ; clock_50    ; 1.000        ; -0.120     ; 7.510      ;
+; -6.963 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer3[12] ; clock_1      ; clock_50    ; 1.000        ; -0.120     ; 7.510      ;
+; -6.945 ; timer_ckt:t1|timer3[5]  ; timer_ckt:t1|timer3[6]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.612      ;
+; -6.945 ; timer_ckt:t1|timer3[5]  ; timer_ckt:t1|timer3[8]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.612      ;
+; -6.945 ; timer_ckt:t1|timer3[5]  ; timer_ckt:t1|timer3[1]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.612      ;
+; -6.945 ; timer_ckt:t1|timer3[5]  ; timer_ckt:t1|timer3[9]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.612      ;
+; -6.899 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.566      ;
+; -6.887 ; timer_ckt:t1|timer2[8]  ; timer_ckt:t1|LED[1]     ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.554      ;
+; -6.883 ; timer_ckt:t1|timer2[8]  ; timer_ckt:t1|timer2[0]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.550      ;
+; -6.879 ; timer_ckt:t1|timer2[2]  ; timer_ckt:t1|timer2[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.546      ;
+; -6.860 ; timer_ckt:t1|timer3[6]  ; timer_ckt:t1|timer3[6]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.527      ;
+; -6.860 ; timer_ckt:t1|timer3[6]  ; timer_ckt:t1|timer3[8]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.527      ;
+; -6.860 ; timer_ckt:t1|timer3[6]  ; timer_ckt:t1|timer3[1]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.527      ;
+; -6.860 ; timer_ckt:t1|timer3[6]  ; timer_ckt:t1|timer3[9]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.527      ;
+; -6.855 ; timer_ckt:t1|timer3[1]  ; timer_ckt:t1|timer3[7]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.522      ;
+; -6.855 ; timer_ckt:t1|timer3[1]  ; timer_ckt:t1|timer3[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.522      ;
+; -6.851 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer3[7]  ; clock_1      ; clock_50    ; 1.000        ; -0.120     ; 7.398      ;
+; -6.851 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer3[12] ; clock_1      ; clock_50    ; 1.000        ; -0.120     ; 7.398      ;
+; -6.841 ; timer_ckt:t1|timer2[3]  ; timer_ckt:t1|LED[1]     ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.508      ;
+; -6.837 ; timer_ckt:t1|timer2[3]  ; timer_ckt:t1|timer2[0]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.504      ;
+; -6.826 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[8]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.493      ;
+; -6.819 ; timer_ckt:t1|timer3[8]  ; timer_ckt:t1|timer3[6]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.486      ;
+; -6.819 ; timer_ckt:t1|timer3[8]  ; timer_ckt:t1|timer3[8]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.486      ;
+; -6.819 ; timer_ckt:t1|timer3[8]  ; timer_ckt:t1|timer3[1]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.486      ;
+; -6.819 ; timer_ckt:t1|timer3[8]  ; timer_ckt:t1|timer3[9]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.486      ;
+; -6.806 ; timer_ckt:t1|timer2[2]  ; timer_ckt:t1|timer2[8]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.473      ;
+; -6.797 ; timer_ckt:t1|timer2[1]  ; timer_ckt:t1|timer2[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.464      ;
+; -6.753 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[3]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.420      ;
+; -6.753 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[1]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.420      ;
+; -6.753 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[2]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.420      ;
+; -6.753 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[4]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.420      ;
+; -6.753 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[5]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.420      ;
+; -6.724 ; timer_ckt:t1|timer2[1]  ; timer_ckt:t1|timer2[8]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.391      ;
+; -6.723 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[7]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.390      ;
+; -6.723 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[9]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.390      ;
+; -6.723 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[6]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.390      ;
+; -6.720 ; timer_ckt:t1|timer3[9]  ; timer_ckt:t1|timer3[7]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.387      ;
+; -6.720 ; timer_ckt:t1|timer3[9]  ; timer_ckt:t1|timer3[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.387      ;
+; -6.706 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[10] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.373      ;
+; -6.698 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[11] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.365      ;
+; -6.686 ; timer_ckt:t1|timer2[2]  ; timer_ckt:t1|timer2[10] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.353      ;
+; -6.669 ; timer_ckt:t1|timer3[2]  ; timer_ckt:t1|timer3[11] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.336      ;
+; -6.666 ; timer_ckt:t1|timer2[2]  ; timer_ckt:t1|timer2[11] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.333      ;
+; -6.642 ; timer_ckt:t1|timer3[3]  ; timer_ckt:t1|timer3[11] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.309      ;
+; -6.633 ; timer_ckt:t1|timer3[12] ; timer_ckt:t1|timer3[6]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.300      ;
+; -6.633 ; timer_ckt:t1|timer3[12] ; timer_ckt:t1|timer3[8]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.300      ;
+; -6.633 ; timer_ckt:t1|timer3[12] ; timer_ckt:t1|timer3[1]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.300      ;
+; -6.633 ; timer_ckt:t1|timer3[12] ; timer_ckt:t1|timer3[9]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.300      ;
+; -6.630 ; timer_ckt:t1|timer3[2]  ; timer_ckt:t1|timer3[6]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.297      ;
+; -6.630 ; timer_ckt:t1|timer2[12] ; timer_ckt:t1|LED[1]     ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.297      ;
+; -6.626 ; timer_ckt:t1|timer2[12] ; timer_ckt:t1|timer2[0]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.293      ;
+; -6.605 ; timer_ckt:t1|timer3[2]  ; timer_ckt:t1|timer3[8]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.272      ;
+; -6.604 ; timer_ckt:t1|timer2[1]  ; timer_ckt:t1|timer2[10] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.271      ;
+; -6.603 ; timer_ckt:t1|timer3[3]  ; timer_ckt:t1|timer3[6]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.270      ;
+; -6.587 ; timer_ckt:t1|timer2[3]  ; timer_ckt:t1|timer2[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.254      ;
+; -6.584 ; timer_ckt:t1|timer2[1]  ; timer_ckt:t1|timer2[11] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.251      ;
+; -6.584 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[7]  ; clock_1      ; clock_50    ; 1.000        ; -0.120     ; 7.131      ;
+; -6.584 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[12] ; clock_1      ; clock_50    ; 1.000        ; -0.120     ; 7.131      ;
+; -6.578 ; timer_ckt:t1|timer3[6]  ; timer_ckt:t1|timer3[11] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.245      ;
+; -6.578 ; timer_ckt:t1|timer3[3]  ; timer_ckt:t1|timer3[8]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.245      ;
+; -6.576 ; timer_ckt:t1|timer3[4]  ; timer_ckt:t1|timer3[6]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.243      ;
+; -6.576 ; timer_ckt:t1|timer3[4]  ; timer_ckt:t1|timer3[8]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.243      ;
+; -6.576 ; timer_ckt:t1|timer3[4]  ; timer_ckt:t1|timer3[1]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.243      ;
+; -6.576 ; timer_ckt:t1|timer3[4]  ; timer_ckt:t1|timer3[9]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.243      ;
+; -6.554 ; timer_ckt:t1|timer3[5]  ; timer_ckt:t1|LED[2]     ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.221      ;
+; -6.549 ; timer_ckt:t1|timer2[5]  ; timer_ckt:t1|timer2[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.216      ;
+; -6.546 ; timer_ckt:t1|timer1[0]  ; timer_ckt:t1|timer1[6]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.213      ;
+; -6.538 ; timer_ckt:t1|timer1[0]  ; timer_ckt:t1|timer1[11] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.205      ;
+; -6.533 ; timer_ckt:t1|timer3[2]  ; timer_ckt:t1|timer3[9]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.200      ;
+; -6.518 ; timer_ckt:t1|timer3[5]  ; timer_ckt:t1|timer3[11] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.185      ;
+; -6.514 ; timer_ckt:t1|timer2[3]  ; timer_ckt:t1|timer2[8]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.181      ;
+; -6.510 ; timer_ckt:t1|timer3[0]  ; timer_ckt:t1|timer3[7]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.177      ;
+; -6.510 ; timer_ckt:t1|timer3[0]  ; timer_ckt:t1|timer3[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.177      ;
+; -6.508 ; timer_ckt:t1|timer1[0]  ; timer_ckt:t1|timer1[7]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.175      ;
+; -6.506 ; timer_ckt:t1|timer3[3]  ; timer_ckt:t1|timer3[9]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.173      ;
+; -6.505 ; timer_ckt:t1|timer3[5]  ; timer_ckt:t1|timer3[2]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.172      ;
+; -6.505 ; timer_ckt:t1|timer3[5]  ; timer_ckt:t1|timer3[3]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.172      ;
+; -6.505 ; timer_ckt:t1|timer3[5]  ; timer_ckt:t1|timer3[4]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.172      ;
+; -6.505 ; timer_ckt:t1|timer3[5]  ; timer_ckt:t1|timer3[5]  ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.172      ;
+; -6.505 ; timer_ckt:t1|timer3[5]  ; timer_ckt:t1|timer3[10] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.172      ;
+; -6.500 ; timer_ckt:t1|timer3[2]  ; timer_ckt:t1|timer3[10] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.167      ;
+; -6.482 ; timer_ckt:t1|timer2[4]  ; timer_ckt:t1|timer2[12] ; clock_50     ; clock_50    ; 1.000        ; 0.000      ; 7.149      ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clock_1'                                                                                                                 ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node               ; To Node                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; -1.244 ; fsm:f1|y_present.timer1 ; fsm:f1|y_present.timer1 ; clock_1      ; clock_1     ; 1.000        ; 0.000      ; 1.911      ;
+; -1.194 ; fsm:f1|y_present.rst    ; fsm:f1|y_present.rst    ; clock_1      ; clock_1     ; 1.000        ; 0.000      ; 1.861      ;
+; -1.193 ; fsm:f1|y_present.timer2 ; fsm:f1|y_present.timer2 ; clock_1      ; clock_1     ; 1.000        ; 0.000      ; 1.860      ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clock_50'                                                                                                                ;
++-------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node               ; To Node                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; 1.358 ; clock_1                 ; timer_ckt:t1|LED[0]     ; clock_1      ; clock_50    ; 0.000        ; 3.699      ; 5.278      ;
+; 1.378 ; clock_1                 ; timer_ckt:t1|LED[2]     ; clock_1      ; clock_50    ; 0.000        ; 3.699      ; 5.298      ;
+; 1.420 ; clock_1                 ; timer_ckt:t1|LED[1]     ; clock_1      ; clock_50    ; 0.000        ; 3.699      ; 5.340      ;
+; 1.669 ; timer_ckt:t1|timer3[0]  ; timer_ckt:t1|timer3[0]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 1.890      ;
+; 1.858 ; clock_1                 ; timer_ckt:t1|LED[0]     ; clock_1      ; clock_50    ; -0.500       ; 3.699      ; 5.278      ;
+; 1.878 ; clock_1                 ; timer_ckt:t1|LED[2]     ; clock_1      ; clock_50    ; -0.500       ; 3.699      ; 5.298      ;
+; 1.898 ; timer_ckt:t1|timer2[0]  ; timer_ckt:t1|timer2[0]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 2.119      ;
+; 1.920 ; clock_1                 ; timer_ckt:t1|LED[1]     ; clock_1      ; clock_50    ; -0.500       ; 3.699      ; 5.340      ;
+; 1.936 ; timer_ckt:t1|timer1[0]  ; timer_ckt:t1|timer1[0]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 2.157      ;
+; 2.802 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer1[9]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 2.903      ;
+; 2.803 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer1[11] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 2.904      ;
+; 2.804 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer1[10] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 2.905      ;
+; 3.019 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer1[5]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.120      ;
+; 3.025 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer1[2]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.126      ;
+; 3.050 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer3[12] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.151      ;
+; 3.115 ; timer_ckt:t1|timer2[9]  ; timer_ckt:t1|timer2[9]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 3.336      ;
+; 3.117 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer2[2]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.218      ;
+; 3.175 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer2[7]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.276      ;
+; 3.238 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer3[2]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.339      ;
+; 3.273 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer2[8]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.374      ;
+; 3.275 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer2[10] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.376      ;
+; 3.293 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer2[7]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.394      ;
+; 3.293 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer2[9]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.394      ;
+; 3.319 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer2[0]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.420      ;
+; 3.323 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|LED[1]     ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.424      ;
+; 3.332 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer1[11] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.433      ;
+; 3.334 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer1[9]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.435      ;
+; 3.336 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer1[10] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.437      ;
+; 3.357 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer2[3]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.458      ;
+; 3.363 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer2[4]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.464      ;
+; 3.365 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer2[1]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.466      ;
+; 3.367 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer2[5]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.468      ;
+; 3.376 ; timer_ckt:t1|timer2[6]  ; timer_ckt:t1|timer2[6]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 3.597      ;
+; 3.389 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[11] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.490      ;
+; 3.390 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[10] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.491      ;
+; 3.394 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[2]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.495      ;
+; 3.400 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[3]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.501      ;
+; 3.403 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[5]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.504      ;
+; 3.404 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[4]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.505      ;
+; 3.439 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[7]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.540      ;
+; 3.439 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[12] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.540      ;
+; 3.519 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer3[7]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.620      ;
+; 3.580 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer1[6]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.681      ;
+; 3.581 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer1[4]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.682      ;
+; 3.589 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer1[8]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.690      ;
+; 3.601 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer1[7]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.702      ;
+; 3.606 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer1[3]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.707      ;
+; 3.606 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer1[1]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.707      ;
+; 3.620 ; timer_ckt:t1|timer3[12] ; timer_ckt:t1|timer3[12] ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 3.841      ;
+; 3.620 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer3[2]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.721      ;
+; 3.644 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer2[6]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.745      ;
+; 3.646 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer2[9]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.747      ;
+; 3.650 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer2[2]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.751      ;
+; 3.661 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer2[3]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.762      ;
+; 3.666 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer2[4]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.767      ;
+; 3.669 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer2[1]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.770      ;
+; 3.669 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer3[1]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.770      ;
+; 3.670 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer2[5]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.771      ;
+; 3.675 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer3[8]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.776      ;
+; 3.678 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer3[6]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.779      ;
+; 3.682 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer3[9]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.783      ;
+; 3.686 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer1[8]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.787      ;
+; 3.688 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer1[6]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.789      ;
+; 3.688 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer1[4]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.789      ;
+; 3.693 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer1[7]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.794      ;
+; 3.696 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer1[1]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.797      ;
+; 3.697 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer1[3]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.798      ;
+; 3.739 ; timer_ckt:t1|timer2[7]  ; timer_ckt:t1|timer2[7]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 3.960      ;
+; 3.741 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[6]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.842      ;
+; 3.741 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[8]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.842      ;
+; 3.742 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[1]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.843      ;
+; 3.746 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer3[9]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.847      ;
+; 3.796 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer1[10] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.897      ;
+; 3.798 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer1[9]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.899      ;
+; 3.799 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer1[11] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.900      ;
+; 3.801 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer1[5]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.902      ;
+; 3.812 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer1[2]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 3.913      ;
+; 3.919 ; timer_ckt:t1|timer3[7]  ; timer_ckt:t1|timer3[7]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 4.140      ;
+; 3.954 ; timer_ckt:t1|timer1[1]  ; timer_ckt:t1|timer1[1]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 4.175      ;
+; 3.980 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer2[0]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 4.081      ;
+; 3.984 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|LED[1]     ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 4.085      ;
+; 4.063 ; timer_ckt:t1|timer3[1]  ; timer_ckt:t1|timer3[1]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 4.284      ;
+; 4.085 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer2[12] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 4.186      ;
+; 4.090 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer2[2]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 4.191      ;
+; 4.099 ; timer_ckt:t1|timer1[3]  ; timer_ckt:t1|timer1[3]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 4.320      ;
+; 4.111 ; timer_ckt:t1|timer1[4]  ; timer_ckt:t1|timer1[4]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 4.332      ;
+; 4.132 ; fsm:f1|y_present.timer1 ; timer_ckt:t1|timer2[6]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 4.233      ;
+; 4.144 ; timer_ckt:t1|timer2[6]  ; timer_ckt:t1|timer2[9]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 4.365      ;
+; 4.245 ; timer_ckt:t1|timer2[7]  ; timer_ckt:t1|timer2[9]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 4.466      ;
+; 4.289 ; timer_ckt:t1|timer1[5]  ; timer_ckt:t1|timer1[5]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 4.510      ;
+; 4.322 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer1[5]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 4.423      ;
+; 4.327 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer1[2]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 4.428      ;
+; 4.327 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer2[11] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 4.428      ;
+; 4.331 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer2[8]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 4.432      ;
+; 4.333 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer2[10] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 4.434      ;
+; 4.333 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer2[12] ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 4.434      ;
+; 4.352 ; fsm:f1|y_present.rst    ; timer_ckt:t1|timer3[7]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 4.453      ;
+; 4.388 ; fsm:f1|y_present.timer2 ; timer_ckt:t1|timer2[3]  ; clock_1      ; clock_50    ; 0.000        ; -0.120     ; 4.489      ;
+; 4.390 ; timer_ckt:t1|timer2[6]  ; timer_ckt:t1|timer2[7]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 4.611      ;
+; 4.392 ; timer_ckt:t1|timer1[2]  ; timer_ckt:t1|timer1[2]  ; clock_50     ; clock_50    ; 0.000        ; 0.000      ; 4.613      ;
++-------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clock_1'                                                                                                                 ;
++-------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node               ; To Node                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; 1.639 ; fsm:f1|y_present.timer2 ; fsm:f1|y_present.timer2 ; clock_1      ; clock_1     ; 0.000        ; 0.000      ; 1.860      ;
+; 1.640 ; fsm:f1|y_present.rst    ; fsm:f1|y_present.rst    ; clock_1      ; clock_1     ; 0.000        ; 0.000      ; 1.861      ;
+; 1.690 ; fsm:f1|y_present.timer1 ; fsm:f1|y_present.timer1 ; clock_1      ; clock_1     ; 0.000        ; 0.000      ; 1.911      ;
++-------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock_1    ; clock_1  ; 3        ; 0        ; 0        ; 0        ;
+; clock_1    ; clock_50 ; 310      ; 3        ; 0        ; 0        ;
+; clock_50   ; clock_50 ; 997      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock_1    ; clock_1  ; 3        ; 0        ; 0        ; 0        ;
+; clock_1    ; clock_50 ; 310      ; 3        ; 0        ; 0        ;
+; clock_50   ; clock_50 ; 997      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 12    ; 12   ;
+; Unconstrained Output Ports      ; 4     ; 4    ;
+; Unconstrained Output Port Paths ; 4     ; 4    ;
++---------------------------------+-------+------+
+
+
++------------------------------------------+
+; Clock Status Summary                     ;
++----------+----------+------+-------------+
+; Target   ; Clock    ; Type ; Status      ;
++----------+----------+------+-------------+
+; clock_1  ; clock_1  ; Base ; Constrained ;
+; clock_50 ; clock_50 ; Base ; Constrained ;
++----------+----------+------+-------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                            ;
++---------------+--------------------------------------------------------------------------------------+
+; Input Port    ; Comment                                                                              ;
++---------------+--------------------------------------------------------------------------------------+
+; inp_switch[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; inp_switch[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; inp_switch[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reset         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++---------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; out_LED[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_LED[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_LED[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_LED[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                            ;
++---------------+--------------------------------------------------------------------------------------+
+; Input Port    ; Comment                                                                              ;
++---------------+--------------------------------------------------------------------------------------+
+; inp_switch[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; inp_switch[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; inp_switch[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reset         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++---------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; out_LED[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_LED[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_LED[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; out_LED[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Sun Oct 24 12:50:14 2021
+Info: Command: quartus_sta Endsem -c timer_controller
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'timer_controller.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clock_50 clock_50
+    Info (332105): create_clock -period 1.000 -name clock_1 clock_1
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -7.611
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -7.611            -277.103 clock_50 
+    Info (332119):    -1.244              -3.631 clock_1 
+Info (332146): Worst-case hold slack is 1.358
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.358               0.000 clock_50 
+    Info (332119):     1.639               0.000 clock_1 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 clock_1 
+    Info (332119):    -2.289              -2.289 clock_50 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4679 megabytes
+    Info: Processing ended: Sun Oct 24 12:50:14 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+
