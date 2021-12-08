@@ -1,8 +1,0 @@
-library ieee;
-use ieee.std_logic_1164.all;
-
-entity timer_controller is
-port( inp_switch:in std_logic_vector(2 downto 0);
-reset,clock_50, clock_1:in std_logic;
-out_LED: out std_logic_vector(3 downto 0));
-end timer_controller;
