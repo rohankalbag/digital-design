@@ -1,4 +1,4 @@
-# VHDL Digital Design
+# Digital Design using VHDL
 
 **EE 214 - Digital Design Lab - Autumn Semester 2021 - Lab Project Files**
 
