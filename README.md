@@ -1,6 +1,6 @@
-# Digital Design using VHDL
+# Digital Design Lab
 
-## EE 214 - Autumn Semester 2021
+## EE 214 - Autumn Semester 2021 - Indian Institute of Technology Bombay
 
 ## Course Instructor - Prof. Maryam Baghini
 
